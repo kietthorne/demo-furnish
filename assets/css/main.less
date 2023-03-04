@@ -1,0 +1,61 @@
+@import "./_variable.less";
+@import "./_layout.less";
+@import "./_team.less";
+@import "./_blog.less";
+@import "./_contact.less";
+@import "./_footer.less";
+@import "./_lorem.less";
+@import "./_copy-right.less";
+@import "./_layout.less";
+@import "./_header.less";
+@import "_home.less";
+
+@import (css)
+  url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;0,700;0,800;0,900;1,500&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  display: flex;
+  text-decoration: none;
+}
+
+section {
+  padding-top: 100px;
+  display: block;
+}
+
+.main-btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: 1px solid @main-color;
+  padding: 0 35px;
+  font-size: 16px;
+  line-height: 48px;
+  color: @third-color;
+  cursor: pointer;
+  transition: all 0.4s ease-out 0s;
+  background-color: @main-color;
+
+  &:hover {
+    background-color: @third-color;
+    border: 1px @main-color solid;
+    color: @main-color;
+  }
+} 

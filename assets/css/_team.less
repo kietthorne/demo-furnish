@@ -1,0 +1,102 @@
+// out: false
+.team-area {
+  background-color: #fffaf6;
+  .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    .container-bg {
+      background: #fffaf6;
+      width: 100%;
+      padding: 200px;
+      .container-tle {
+        display: block;
+        margin-bottom: 25px;
+        h3 {
+          display: block;
+          color: #333;
+          font-size: 3.2rem;
+          font-weight: 600;
+          text-align: center;
+        }
+        p {
+          display: block;
+          text-align: center;
+          width: 32%;
+          margin-left: auto;
+          margin-right: auto;
+          font-size: 1.6rem;
+          font-weight: 400;
+          color: #777;
+          padding-bottom: 30px;
+        }
+      }
+      .container-team {
+        display: flex;
+        margin-top: 30px;
+        justify-content: space-between;
+        .info-img {
+          text-align: center;
+          background: #fff;
+          width: 25%;
+          margin-left: 10px;
+          margin-right: 10px;
+          padding: 30px;
+          border: 1px solid #fff;
+          img {
+            border-radius: 999px;
+            margin-bottom: 25px;
+          }
+          .info-name {
+            a {
+              font-size: 2rem;
+              color: #333;
+              margin-left: 75px;
+              margin-bottom: 10px;  
+              
+            }
+            a:hover {
+              color: #fe7865;
+              transition: all 0.4s ease-in-out;
+            }
+          }
+          .info-function {
+            p {
+              font-size: 1.4rem;
+              color: #777;
+              letter-spacing: 2px;
+              margin-bottom: 10px;
+            }
+          }
+          .social {
+            display: flex;
+            border: 1px solid #fe7865;
+            width: 50%;
+            margin: 0 auto;
+            border-radius: 20px;
+            background: #ffe8e5;
+            padding: 10px 10px;
+            
+            a {
+              color: #777;
+              padding: 0 10px;
+              font-size: 2rem;
+            }
+            a:hover {
+              color: #fe7f6d;
+              transition: all 0.4s ease-in-out;
+            }
+          }
+          .img:hover {
+            background: #fe7f6d;
+          }
+        }
+      }
+      .info-img:hover {
+        border: 1px solid #fe7f6d;
+      }
+    }
+  } 
+}

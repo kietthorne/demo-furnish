@@ -1,0 +1,153 @@
+// out: false  
+
+@import './_variable.less';
+
+.header {
+  padding: 30px 0;
+  background-color: @third-color;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+  
+  .header-content1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    overflow: hidden;
+  
+    .menu1 {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      bottom: 0;
+      width: auto;
+    }    
+  }
+}
+
+.nav {
+  float: left;
+  display: block;
+  color: @second-color;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-align: center;
+  
+  &:hover:not(.active) {
+    color: @main-color; 
+  }
+
+  &.active {
+    color: @main-color;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1600px)  {
+  .header-content2 {
+    display: none;
+  }
+  
+  .logo2 {
+    display: none;
+  }
+  
+  #menu2 {
+    display: none;
+  }
+
+  .icon-nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 912px) {
+  .logo1 {
+    display: none;
+  }
+
+  .menu1 {
+    display: none;
+  }
+
+  .header-content1 {
+    display: none;
+  }
+
+  .header-content2 {
+    width: 80%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    overflow: hidden;
+      
+    // ẩn đường link của thanh menu (trừ logo)
+    #menu2 {
+      display: none;
+
+      a {
+        display: block;
+        color: @second-color;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 14px 16px;
+
+        &:hover:not(.active) {
+          color: @main-color; 
+        }
+      
+        &.active {
+          color: @main-color;
+        } 
+      }
+    }
+
+    // style of icon-nav
+    .icon-nav {
+      color: @second-color;
+      display: inline-block;
+      position: absolute;
+      right: 20px;
+      top: 0;
+      cursor: pointer;
+      padding: 0.25rem 0.75rem;
+      font-size: 1.25rem;
+      line-height: 1;
+      background-color: transparent;
+      border: 1px solid transparent;
+      border-radius: 0.25rem;
+
+      .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: @second-color;
+        margin: 6px 0;
+        transition: 0.4s;
+      }
+    }
+  }
+
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+}
+
+

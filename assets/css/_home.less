@@ -1,0 +1,184 @@
+// out: false
+
+@import "./_variable.less";
+
+#home {
+  padding-top: 100px;
+  background-color: @third-color;
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+/* Phần slide */
+.slider {
+  width: 80%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  .slider-wrapper {
+    width: 100%;
+    margin: 15px auto;
+    background-color: @sixth-corlor;
+    position: relative;
+    overflow: hidden;
+
+    .slider-main {
+      display: flex;
+      position: relative;
+
+      .slide {
+        display: none;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex: 1 0 100%;
+        flex-grow: 1; /* cho phép nó giãn ra */
+        flex-shrink: 0; /* không cho phép giãn ra */
+        flex-basis: 100%; /*để slide luôn luôn full */
+
+        .image-slide {
+          width: 40%;
+          position: relative;
+          display: block;
+
+          .discout-slide {
+            width: 100px;
+            height: 100px;
+            border: 1px solid @main-color;
+            color: @third-color;
+            border-radius: 50%;
+            background-color: @main-color;
+            position: absolute;
+            top: 15%;
+            left: 88%;
+            text-align: center;
+            font-size: 18px;
+          }
+        }
+
+        .content-slide {
+          width: 60%;
+          margin-left: 70px;
+        }
+      }
+    }
+  }
+}
+
+/* Nội dung của slide */
+.imgSlide {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.h1-slide {
+  font-family: "Poppins", sans-serif;
+  font-size: 92px;
+  color: @fifth-color;
+  margin: 0px 0px 10px;
+  font-weight: 500;
+  line-height: 110px;
+}
+
+.p-slide {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+/* Phần Social */
+.slide-social {
+  position: absolute;
+  top: 81%;
+  right: 15%;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  text-align: right;
+
+  .line {
+    content: "";
+    height: 1px;
+    width: 25%;
+    background-color: @main-color;
+    align-content: center;
+    margin-right: 80px;
+  }
+
+  .icon-slide-social {
+    align-content: center;
+    text-align: center;
+    border: 1px solid #ddd;
+    color: #ddd;
+    width: 30px;
+    height: 30px;
+    line-height: 1px;
+    margin: 10px;
+    padding: 5px;
+
+    &:hover {
+      border: 1px solid @main-color;
+      color: @main-color;
+    }
+  }
+}
+
+/* Phần Dot điều khiển */
+.slider-dot {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+
+  .dot {
+    cursor: pointer;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: @fourth-color;
+    border-radius: 50%;
+    margin: 15px;
+
+    &:hover {
+      cursor: pointer;
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      background: @main-color;
+      border-radius: 50%;
+    }
+  }
+}
+
+/* Phần hiệu ứng khi chuyển slide */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
