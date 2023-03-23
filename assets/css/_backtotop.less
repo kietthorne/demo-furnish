@@ -1,0 +1,25 @@
+// out: false
+@import "./_variable.less";
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  font-size: 25px;
+  width: 40px;
+  height: 40px;
+  z-index: 99;
+  text-align: center;
+  box-shadow: 0px 0px 30px 0px rgba(156, 156, 156, 0.25);
+  cursor: pointer;
+  color: @third-color;
+  background-color: @main-color;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    background-color: @third-color;
+    color: @main-color;
+    transition: all 0.4s ease-out 0s;
+  }
+}

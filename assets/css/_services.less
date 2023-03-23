@@ -1,0 +1,150 @@
+// out: false
+
+@import "./_variable.less";
+
+#services {
+  background-color: @sixth-color;
+  padding-top: 100px;
+  padding-bottom: 130px;
+}
+
+.services-container {
+  width: 80%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin: 0px;
+    padding: 0px;
+
+    .services-title {
+      flex: 0 0 50%;
+      max-width: 50%;
+      margin-right: 15px;
+      margin-left: 15px;
+      margin-bottom: 30px;
+
+      .ser-title {
+        font-size: 18px;
+        color: @main-color;
+        font-weight: 500;
+        padding-left: 110px;
+        position: relative;
+        margin-bottom: 15px;
+
+        .ser-line {
+          background-color: @main-color;
+          height: 1px;
+          width: 100px;
+          content: "";
+          position: absolute;
+          top: 14px;
+          left: 0px;
+        }
+      }
+
+      .ser-title2 {
+        font-size: 32px;
+        font-weight: 600;
+        color: @fifth-color;
+        margin: 0px;
+        margin-bottom: 15px;
+      }
+
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        color: @second-color;
+        margin: 0px;
+      }
+    }
+
+    .colum1 {
+      flex: 0 0 50%;
+      max-width: 50%;
+      margin-top: 45px;
+      position: relative;
+      padding-left: 15px;
+      padding-right: 15px;
+
+      .img-service {
+        width: 100%;
+        vertical-align: middle;
+        border-style: none;
+      }
+
+      .mt-30 {
+        margin-top: 30px;
+      }
+    }
+
+    .colum2 {
+      flex: 0 0 50%;
+      max-width: 50%;
+      position: relative;
+      padding-left: 15px;
+      padding-right: 15px;
+
+      .content-services {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+        margin-top: 45px;
+        justify-content: center;
+
+        .content-ser {
+          flex: 0 0 50%;
+          max-width: 50%;
+          position: relative;
+          padding-left: 15px;
+          padding-right: 15px;
+
+          .cell-ser {
+            border: 1px solid #ddd;
+            padding: 25px 15px;
+            background: @third-color;
+            text-align: center;
+            font-size: 16px;
+
+            .icon-ser {
+              color: @main-color;
+              font-size: 50px;
+            }
+
+            .content-cell {
+              margin-top: 10px;
+
+              .title-cell {
+                font-weight: 600;
+                color: @main-color;
+                font-size: 20px;
+                margin-bottom: 10px;
+                margin-top: 0px;
+              }
+
+              p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                margin: 0px;
+                padding: 0px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.mt-30 {
+  margin-top: 30px;
+}

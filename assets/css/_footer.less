@@ -1,81 +1,231 @@
 // out: false
-.footer {
-  background-image: url(https://preview.uideck.com/items/furnish-opl/assets/images/xfooter-bg.png.pagespeed.ic.Hg5ENdPEL-.png);
-  .block-footer {
-    display: flex;
-    align-items: center;
-    margin-left: 280px;
-    margin-top: 100px;
-    .furnish {
-      width: 18%;
-      margin-top: -25px;
-      p {
-        font-weight: 400;
-        color: #777;
-        line-height: 1.6;
-      }
-      .social-icons {
+@import "./_variable.less";
+
+.footer-area {
+  position: relative;
+  .container-ft {
+    width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+    .footer-inner {
+      padding-top: 75px;
+      padding-bottom: 120px;
+      margin-left: 15px;
+      margin-right: 20px;
+      .row {
         display: flex;
-        margin: 15px 0;
-        text-align: center;
-        span {
-          margin-right: 10px;
+        margin-right: -15px;
+        margin-left: -15px;
+        .footer-logo {
+          width: 24%;
+          margin-top: 40px;
+          margin-left: auto;
+          margin-right: auto;
+          a {
+            margin-bottom: 10px;
+          }
+          .mt-10 {
+            margin-top: 10px;
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 1.8;
+            color: @second-color;
+            margin: 0;
+          }
+          .social-icons {
+            display: flex;
+            margin-top: 15px;
+            a {
+              color: @second-color;
+              width: 35px;
+              height: 35px;
+              line-height: 38px;
+              align-items: center;
+              justify-content: center;
+              background-color: @third-color;
+              box-shadow: 0px 5px 21px 0px rgba(254, 119, 101, 0.2);
+              transition: all 0.4s ease-out 0s;
+              border-radius: 50%;
+              margin-right: 10px;
+              &:hover {
+                color: @third-color;
+                transition: all 0.4s ease-out 0s;
+                background-color: @main-color;
+              }
+            }
+          }
         }
-        a {
-          display: flex;
-          border: 1px solid #fff;
-          border-radius: 999px;
-          justify-content: center;
-          align-items: center;
-          width: 30px;
-          height: 30px;
-          font-size: 1.6rem;
-          color: #777;
+        .mt-50s {
+          margin-top: 50px;
+          width: 258px;
+          .footer-title {
+            font-size: 2rem;
+            padding-bottom: 5px;
+          }
+          .list {
+            a {
+              margin-top: 15px;
+              color: @second-color;
+              &:hover {
+                color: @main-color;
+                transition: all 0.4s ease-out 0s;
+              }
+            }
+          }
+          .flex {
+            display: flex;
+            margin-top: 25px;
+            width: 300px;
+            span {
+              color: @second-color;
+              margin-right: 15px;
+            }
+            .color {
+              color: @second-color;
+            }
+          }
         }
-        a:hover {
-          border: 1px solid #fe7865;
-          border-radius: 999px;
-          color: #fff;
-          background: #fe7865;
-          transition: all 0.4s ease-in-out;
+      }
+      .mt-50s {
+        width: 170px;
+        margin-top: 50px;
+        margin-left: 40px;
+        .footer-title {
+          font-size: 2rem;
+          padding-bottom: 5px;
+        }
+        .list {
+          a {
+            margin-top: 15px;
+            color: @second-color;
+            &:hover {
+              color: @main-color;
+              transition: all 0.4s ease-out 0s;
+            }
+          }
         }
       }
     }
-    .shc-info {
+    .footer-copyright {
+      border-top: 1px solid @eighth-color;
+      padding-top: 15px;
+      padding-bottom: 15px;
       display: flex;
-      width: 100%;
-      margin-left: 30px;
-      .shc-font {
-        font-size: 2rem;
-      }
-      .services {
-        width: 30%;
-        .list {
-          a {
-            flex-direction: column;
-            color: #777;
-            margin: 10px 0;
+      justify-content: center;
+      .row {
+        .copyright {
+          p {
+            display: flex;
+            a {
+              color: @main-color;
+              margin-left: 5px;
+            }
           }
-        }
-      }
-      .help {
-        width: 25%;
-        .help-list {
-          a {
-            color: #777;
-            margin: 10px 0;
-          }
-        }
-      }
-      .contacts {
-        width: 23%;
-        .list {
-          display: flex;
-          margin: 10px 0;
-          color: #777;
         }
       }
     }
   }
 }
 
+.footer-area::before {
+  position: absolute;
+  content: "";
+  background-image: url(../images/footer-bg.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  width: 100%;
+  height: 800px;
+  bottom: 0;
+  left: 0;
+  background-size: 100% 100%;
+  z-index: -1;
+}
+
+@media (min-width: 1199.98px) and (max-width: 1920px) {
+  .footer-area {
+    .container-ft {
+      .footer-inner {
+        .row {
+          margin-left: 0;
+          margin-right: 0;
+          .footer-logo {
+            width: 290px;
+            margin-left: 0;
+          }
+          .ft {
+            margin-left: 12px;
+          }
+        }
+      }
+      .footer-copyright {
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media (min-width: 991.98px) and (max-width: 1199.96px) {
+  .footer-area {
+    .container-ft {
+      width: 90%;
+    }
+    .footer-copyright {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991.96px) {
+  .footer-area {
+    .container-ft {
+      width: 100%;
+      .footer-inner {
+        .row {
+          display: flex;
+          flex-wrap: wrap;
+          margin: 0 15px;
+          .footer-logo {
+            width: 27%;
+            margin-top: 40px;
+            margin-left: 40px;
+            margin-right: 0;
+          }
+        }
+      }
+      .footer-copyright {
+        width: 70%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media (min-width: 454px) and (max-width: 575.98px) {
+  .footer-area {
+    width: 100%;
+    .container-ft {
+      width: 100%;
+      .footer-inner {
+        width: 100%;
+        .row {
+          display: flex;
+          flex-wrap: wrap;
+          margin: 0 15px;
+          flex-direction: column;
+          width: 100%;
+          margin-left: 0;
+          .footer-logo {
+            margin-left: 40px;
+            width: 90%;
+          }
+        }
+      }
+    }
+    .footer-copyright {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+}

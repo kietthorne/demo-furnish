@@ -1,0 +1,273 @@
+// out: false
+
+@import "./_variable.less";
+
+.products-cotainer {
+  width: 80%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 100px;
+  padding-bottom: 130px;
+  display: flex;
+  flex-wrap: wrap;
+
+  .products-tab {
+    text-align: center;
+    flex: 0 0 25%;
+    max-width: 25%;
+
+    .tab {
+      width: 100%;
+
+      .active {
+        border: 1px solid @main-color;
+        color: @third-color;
+        background-color: @main-color;
+      }
+
+      a {
+        border: 1px solid #ddd;
+        line-height: 58px;
+        background-color: @third-color;
+        font-size: 18px;
+        font-weight: 600;
+        color: @second-color;
+        display: block;
+        margin-bottom: -1px;
+        cursor: pointer;
+      }
+
+      .collection-title {
+        border: 1px solid #ddd;
+        line-height: 58px;
+        background-color: #e5e5e5;
+        font-size: 24px;
+        font-weight: 600;
+        padding: 30px 20px;
+        color: @fifth-color;
+        margin: 0px auto -1px auto;
+      }
+    }
+  }
+}
+
+// Phần chứa các group product
+.products-content {
+  flex: 0 0 75%;
+  max-width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  .group-products {
+    width: 100%;
+    display: none;
+
+    .all-products {
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      justify-content: space-between;
+      transition: transform 0.3s linear;
+
+      .product {
+        flex: 0 0 34%;
+        padding: 0px 15px;
+
+        .img-product {
+          display: block;
+          overflow: hidden;
+          width: 100%;
+          z-index: 2;
+          position: relative;
+
+          .discout-pro {
+            width: 70px;
+            height: 70px;
+            background-color: @main-color;
+            text-align: center;
+            border-radius: 50%;
+            color: @third-color;
+            z-index: 3;
+
+            span {
+              font-weight: 600;
+              font-size: 22px;
+              line-height: 70px;
+            }
+          }
+
+          .pro1 {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+          }
+
+          .pro2 {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+          }
+
+          .pro3 {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+          }
+
+          .img-disc-product {
+            width: 100%;
+            vertical-align: middle;
+            border-style: none;
+            // thiết lập quá trình để phóng to img mất bao nhiêu thời gian
+            transition-duration: 0.5s;
+            // Safari
+            -webkit-transition-duration: 0.5s;
+            // Mozilla Firefox
+            -moz-transition-duration: 0.5s;
+            // Opera
+            -o-transition-duration: 0.5s;
+            // IE
+            -ms-transition-duration: 0.5s;
+
+            &:hover {
+              transform: scale(1.2);
+              -webkit-transform: scale(1.2);
+              -moz-transform: scale(1.2);
+              -o-transform: scale(1.2);
+              -ms-transform: scale(1.2);
+              cursor: pointer;
+            }
+          }
+        }
+
+        .info-product {
+          text-align: center;
+          margin-top: 30px;
+
+          .title-product {
+            font-family: "Poppins", sans-serif;
+            color: @fifth-color;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 0px;
+
+            a {
+              color: @fifth-color;
+
+              &:hover {
+                color: @main-color;
+              }
+            }
+          }
+
+          ul {
+            margin: 0px;
+            padding: 0px;
+            list-style-type: none;
+            overflow: hidden;
+          }
+
+          li {
+            float: left;
+            display: block;
+          }
+
+          i {
+            display: inline-block;
+          }
+
+          .rating {
+            color: #efb85f;
+            padding: 0px 72px;
+          }
+
+          .regular-price {
+            display: inline-block;
+            color: #c4c4c4;
+            margin: 0 3px;
+            font-size: 16px;
+            font-weight: 600;
+            position: relative;
+            text-decoration: line-through;
+          }
+
+          .discout-price {
+            display: inline-block;
+            color: @main-color;
+            margin: 0 3px;
+            font-size: 16px;
+            font-weight: 600;
+            position: relative;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Phần chỉnh slide
+.control-slide-product {
+  display: block;
+  color: @main-color;
+  position: absolute;
+  right: -80px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  z-index: 9;
+  cursor: pointer;
+}
+
+.next {
+  border: 1px solid @main-color;
+  border-radius: 50%;
+  height: 3.5em;
+  width: 3.5em;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  top: 125px;
+
+  &:hover {
+    border: 1px solid @main-color;
+    border-radius: 50%;
+    height: 3.5em;
+    width: 3.5em;
+    background-color: @main-color;
+    color: @third-color;
+  }
+
+  i {
+    font-size: 25px;
+  }
+}
+
+.previous {
+  border: 1px solid @main-color;
+  border-radius: 50%;
+  height: 3.5em;
+  width: 3.5em;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 15px;
+  top: 190px;
+
+  &:hover {
+    border: 1px solid @main-color;
+    border-radius: 50%;
+    height: 3.5em;
+    width: 3.5em;
+    background-color: @main-color;
+    color: @third-color;
+  }
+
+  i {
+    font-size: 25px;
+  }
+}

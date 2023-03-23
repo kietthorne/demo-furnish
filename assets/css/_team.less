@@ -1,6 +1,6 @@
 // out: false
 .team-area {
-  background-color: #fffaf6;
+  background-color: @sixth-color;
   .container {
     width: 100%;
     padding-right: 15px;
@@ -8,15 +8,15 @@
     margin-right: auto;
     margin-left: auto;
     .container-bg {
-      background: #fffaf6;
+      background: @sixth-color;
       width: 100%;
-      padding: 200px;
+      padding: 50px 200px;
       .container-tle {
         display: block;
         margin-bottom: 25px;
         h3 {
           display: block;
-          color: #333;
+          color: @fifth-color;
           font-size: 3.2rem;
           font-weight: 600;
           text-align: center;
@@ -29,7 +29,7 @@
           margin-right: auto;
           font-size: 1.6rem;
           font-weight: 400;
-          color: #777;
+          color: @second-color;
           padding-bottom: 30px;
         }
       }
@@ -39,33 +39,33 @@
         justify-content: space-between;
         .info-img {
           text-align: center;
-          background: #fff;
-          width: 25%;
+          background: @third-color;
+          width: 30%;
           margin-left: 10px;
           margin-right: 10px;
-          padding: 30px;
-          border: 1px solid #fff;
+          padding: 20px;
+          border: 1px solid @third-color;
           img {
             border-radius: 999px;
             margin-bottom: 25px;
           }
           .info-name {
             a {
-              font-size: 2rem;
-              color: #333;
+              font-size: 1.6rem;
+              color: @fifth-color;
               margin-left: 75px;
-              margin-bottom: 10px;  
-              
+              margin-bottom: 10px;
+              font-weight: 500;
             }
             a:hover {
-              color: #fe7865;
+              color: @main-color;
               transition: all 0.4s ease-in-out;
             }
           }
           .info-function {
             p {
               font-size: 1.4rem;
-              color: #777;
+              color: @second-color;
               letter-spacing: 2px;
               margin-bottom: 10px;
             }
@@ -76,27 +76,159 @@
             width: 50%;
             margin: 0 auto;
             border-radius: 20px;
-            background: #ffe8e5;
+            background: @tenth-color;
             padding: 10px 10px;
-            
+
             a {
-              color: #777;
+              color: @second-color;
               padding: 0 10px;
-              font-size: 2rem;
+              font-size: 1.6rem;
             }
             a:hover {
-              color: #fe7f6d;
+              color: @seventh-color;
               transition: all 0.4s ease-in-out;
             }
           }
           .img:hover {
-            background: #fe7f6d;
+            background: @seventh-color;
           }
         }
       }
       .info-img:hover {
-        border: 1px solid #fe7f6d;
+        border: 1px solid @seventh-color;
+        transition: all 0.4s ease-in-out;
       }
     }
-  } 
+  }
 }
+
+// Desktops
+@media (min-width: 1199.98px) and (max-width: 1920px) {
+  .team-area {
+    .container {
+      .container-bg {
+        .container-tle {
+          p {
+            width: 80%;
+            margin-top: 30px;
+          }
+        }
+        .container-team {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .info-img {
+            width: 36%;
+            .info-name {
+              a {
+                justify-content: center;
+                margin-left: 0;
+              }
+            }
+            .social {
+              width: 130px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 991.98px) and (max-width: 1199.96px) {
+  .team-area {
+    .container {
+      .container-bg {
+        padding: 50px 40px;
+        .container-tle {
+          p {
+            width: 50%;
+          }
+        }
+        .container-team {
+          display: flex;
+          flex-direction: row;
+          width: 76%;
+          .info-img {
+            .info-name {
+              a {
+                margin: 0 60px;
+              }
+            }
+            .info-function {
+              p {
+                margin: 5px 20px;
+              }
+            }
+            .social {
+              width: 130px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991.96px) {
+  .team-area {
+    .container {
+      .container-bg {
+        padding: 50px 40px;
+        .container-tle {
+          a {
+            margin: 5px 12px;
+          }
+          p  {
+            width: 92%;
+          }
+        }
+        .container-team {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          .info-img {
+            padding: 30px;
+            margin-bottom: 30px;
+            width: 306px;
+            .social {
+              width: 128px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 454px) and (max-width: 575.98px) { 
+  .team-area {
+    .container {
+      .container-bg {
+        padding: 0;
+        .container-tle {
+          a {
+            width: 100%;
+          }
+          p {
+            width: 100%;
+          }
+        }
+        .container-team {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          margin-bottom: 86px;
+          .info-img {
+            width: 360px;
+            padding: 30px;
+            margin-bottom: 30px;
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+

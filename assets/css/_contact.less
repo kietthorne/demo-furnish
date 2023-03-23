@@ -1,11 +1,13 @@
 // out: false
+@import "./_variable.less";
+
 .contact {
-  background: #fff;
+  background: @third-color;
   .contact-title {
     h2 {
       text-align: center;
       font-size: 6rem;
-      color: #333;
+      color: @fifth-color;
       font-weight: 600;
       margin: 100px 0;
     }
@@ -22,7 +24,7 @@
       h4 {
         font-size: 2.6rem;
         font-weight: 600;
-        color: #333;
+        color: @fifth-color;
         margin-top: 30px;
         margin-bottom: 25px;
       }
@@ -33,10 +35,10 @@
         .social-icon {
           font-size: 2rem;
           margin: 15px 0;
-          color: #fe7865;
+          color: @main-color;
         }
         .color {
-          color: #777;
+          color: @second-color;
           margin-left: 25px;
         }
       }
@@ -73,17 +75,144 @@
         width: 35%;
         text-align: center;
         font-weight: 400;
-        color: #fff;
-        background: #fe7865;
+        color: @third-color;
+        background: @main-color;
         padding: 15px 0;
-        border: 1px solid #fe7865;
+        border: 1px solid @main-color;
         margin: 30px 0;
+        cursor: pointer;
       }
       .button:hover {
-        color: #fe7865;
+        color: @main-color;
         background: #fff;
-        border: 1px solid #fe7865;
+        border: 1px solid @main-color;
         transition: all 0.4s ease-in-out;
+      }
+    }
+  }
+}
+
+@media (min-width: 1199.98px) and (max-width: 1920px) {
+  .contact {
+    margin-top: 0;
+    .block-contact {
+      .contact-info {
+        margin-right: -92px;
+      }
+    }
+  }
+}
+
+@media (min-width: 991.98px) and (max-width: 1199.96px) {
+  .contact {
+    margin-top: 0;
+    .block-contact {
+      width: 90%;
+      .contact-info {
+        margin-right: -92px;
+        .social-item {
+          width: 100%;
+          .social-home {
+            p {
+              width: 130%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991.96px) {
+  .contact {
+    margin-top: 0;
+    .block-contact {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 90%;
+      .contact-info {
+        margin-right: 100px;
+        h4 {
+          font-size: 2rem;
+          font-weight: 500;
+        }
+        .social-item {
+          width: 135%;
+          .social-home {
+            p {
+              width: 160%;
+            }
+          }
+        }
+      }
+      .contact-form {
+        margin-right: 42%;
+        .name-email {
+          display: flex;
+          flex-direction: column;
+          .name {
+            margin-bottom: 15px;
+            width: 184%;
+          }
+          .email {
+            width: 184%;
+          }
+        }
+        .message {
+          width: 184%;
+        }
+        .button {
+          width: 70%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 454px) and (max-width: 575.98px) { 
+  .contact {
+    margin-top: 0;
+    .block-contact {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 90%;
+      .contact-info {
+        margin-left: -65%;
+        h4 {
+          width: 127%;
+          font-size: 2rem;
+          font-weight: 500;
+        }
+        .social-item {
+          width: 172%;
+          .social-home {
+            p {
+              width: 170%;
+            }
+          }
+        }
+      }
+      .contact-form {
+        margin-right: 42%;
+        .name-email {
+          display: flex;
+          flex-direction: column;
+          .name {
+            margin-bottom: 15px;
+            width: 184%;
+          }
+          .email {
+            width: 184%;
+          }
+        }
+        .message {
+          width: 184%;
+        }
+        .button {
+          width: 70%;
+        }
       }
     }
   }

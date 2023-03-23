@@ -11,146 +11,798 @@
     <link rel="shortcut icon" href="assets/images/icon1.png" type="image/png" />
   </head>
   <body>
-    <!-- Phần Header -->
-    <header class="header">
-      <div class="header-content2">
-        <a href="index.html">
-          <img class="logo2" src="./assets/images/icon.webp" alt="Furnish and Decor">
-        </a>
-        <div id="menu2">
-          <!-- Menu icon -->
-          <a class="active" href="#home">Home</a>
-          <a href="#products">Products</a>
-          <a href="#services">Services</a>
-          <a href="#portfolio">Portfolio</a>
-          <a href="#team">Team</a>
-          <a href="#blog">Blog</a>
-          <a href="#contact">Contact</a>
-        </div>
-        <div class="icon-nav" onclick="navMobiandChangeBtn(this)">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-        </div>
-      </div>
-      <div class="header-content1">
-        <a href="index.html">
-          <img class="logo1" src="./assets/images/icon.webp" alt="Furnish and Decor">
-        </a>
-        <div class="menu1">
-          <a class="nav active" href="#home">Home</a>
-          <a class="nav" href="#products">Products</a>
-          <a class="nav" href="#services">Services</a>
-          <a class="nav" href="#portfolio">Portfolio</a>
-          <a class="nav" href="#team">Team</a>
-          <a class="nav" href="#blog">Blog</a>
-          <a class="nav" href="#contact">Contact</a>
-        </div>
-      </div>
-    </header>
+    <div class="container">
 
-    <!-- Phần nội dung -->
-    <!-- Phần trang Home - slide -->
-    <section id="home">
-      <div class="slider">
-        <div class="slider-wrapper">
-          <div class="slider-main">
+      <!-- Phần đầu trang -->
+      <header class="header" id="top">
 
-            <!-- slide 1 -->
-            <div class="slide fade" id="sl1">
-              <div class="image-slide">
-                <img class="imgSlide" src="./assets/images/slide1.webp" alt="sofa and armchairs">
-                <div class="discout-slide">
-                  <p>
-                    50%
+        <!-- Header mobi -->
+        <div class="header-content2">
+          <a href="index.html">
+            <img class="logo2" src="./assets/images/icon.webp" alt="Furnish and Decor">
+          </a>
+          <div id="menu2">
+            <!-- Menu icon -->
+            <a class="active" href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#team">Team</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="icon-nav" onclick="navMobiandChangeBtn(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </div>
+        <!-- Normal Header -->
+        <div class="header-content1">
+          <a href="index.html">
+            <img class="logo1" src="./assets/images/icon.webp" alt="Furnish and Decor">
+          </a>
+          <div class="menu1">
+            <a class="nav active" href="#home">Home</a>
+            <a class="nav" href="#products">Products</a>
+            <a class="nav" href="#services">Services</a>
+            <a class="nav" href="#portfolio">Portfolio</a>
+            <a class="nav" href="#team">Team</a>
+            <a class="nav" href="#blog">Blog</a>
+            <a class="nav" href="#contact">Contact</a>
+          </div>
+        </div>
+      </header>
+
+          <!-- Phần nội dung -->
+      <!-- Phần trang home - slide -->
+      <section id="home">
+        <div class="slider">
+          <div class="slider-wrapper"> 
+            <div class="slider-main">
+
+              <!-- Slide 1 -->
+              <div class="slide fade" id="sl1">
+                <div class="image-slide">
+                  <img class="imgSlide" src="./assets/images/slide1.webp" alt="sofa and armchairs">
+                  <div class="discout-slide">
+                    <p>
+                      50%
+                      <br>
+                      OFF
+                    </p>
+                  </div>
+                </div>
+                <div class="content-slide">
+                  <h1 class="h1-slide">  
+                    Sofa and Armchairs
+                  </h1>
+                  <p class="p-slide">One day however a small line of blind text by the name of Lorem Ipsum 
                     <br>
-                    OFF
+                    decided to leave for the far World of Grammar.
                   </p>
+                  <a href="#contact" class="main-btn">Contact Us ></a> 
                 </div>
               </div>
-              <div class="content-slide">
-                <h1 class="h1-slide">  
-                  Sofa and Armchairs
-                </h1>
-                <p class="p-slide">One day however a small line of blind text by the name of Lorem Ipsum 
-                  <br>
-                  decided to leave for the far World of Grammar.
-                </p>
-                <a href="#contact" class="main-btn">Contact Us ></a>
+              <!-- Slide 2 -->
+              <div class="slide fade" id="sl2">
+                <div class="image-slide">
+                  <img class="imgSlide" src="./assets/images/slide2.webp" alt="winter sale! is here">
+                  <div class="discout-slide">
+                    <p>
+                      50%
+                      <br>
+                      OFF
+                    </p>
+                  </div>
+                </div>
+                <div class="content-slide">
+                  <h1 class="h1-slide">  
+                    Get a Free Quote
+                  </h1>
+                  <p class="p-slide">One day however a small line of blind text by the name of Lorem Ipsum 
+                    <br>
+                    decided to leave for the far World of Grammar.
+                  </p>
+                  <a href="#contact" class="main-btn">Contact Us ></a> 
+                </div>
+              </div>
+              <!-- Slide 3 -->
+              <div class="slide fade" id="sl3">
+                <div class="image-slide">
+                  <img class="imgSlide" src="./assets/images/slide3.webp" alt="winter sale! is here">
+                  <div class="discout-slide">
+                    <p>
+                      50%
+                      <br>
+                      OFF
+                    </p>
+                  </div>
+                </div>
+                <div class="content-slide">
+                  <h1 class="h1-slide">  
+                    Winter Sale! is Here
+                  </h1>
+                  <p class="p-slide">One day however a small line of blind text by the name of Lorem Ipsum 
+                    <br>
+                    decided to leave for the far World of Grammar.
+                  </p>
+                  <a href="#contact" class="main-btn">Contact Us ></a> 
+                </div>
               </div>
             </div>
+          </div> 
+          <div class="slide-social">
+            <span class="line"></span>
+            <a href="!#" class="icon-slide-social">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="!#" class="icon-slide-social">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="!#" class="icon-slide-social">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+          <ul class="slider-dot">
+            <li class="dot"><a href="#sl1"></a></li>
+            <li class="dot"><a href="#sl2"></a></li>
+            <li class="dot"><a href="#sl3"></a></li>
+          </ul>
+        </div>
+      </section>
 
-            <!-- slide 2 -->
-            <div class="slide fade" id="sl2">
-              <div class="image-slide">
-                <img class="imgSlide" src="./assets/images/slide2.webp" alt="winter sale! is here">
-                <div class="discout-slide">
-                  <p>
-                    50%
-                    <br>
-                    OFF
-                  </p>
+      <!-- Phần Discout Products -->
+      <section id="discout-products">
+        <div class="discout-products-content">
+          <div class="disc-products">
+              <img class="img-disc-product" src="./assets/images/collection1.jpeg" alt="Products">
+              <div class="content-discout">
+                <h4 class="title-discout-pro">High-quality furnitures For your home</h4>
+                <a href="#" class="view-colection">View Collection ></a>
+              </div>
+          </div>
+          <div class="disc-products">
+            <img class="img-disc-product" src="./assets/images/collection2.jpeg" alt="Products">
+            <div class="content-discout">
+              <h4 class="title-discout-pro">Hot Offer Discount up to 80%</h4>
+              <a href="#" class="view-colection">View Collection ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Products -->
+      <section id="products">
+        <div class="products-cotainer">
+          <div class="products-tab">
+              <div class="tab">
+                <h4 class="collection-title">OUR COLLECTION</h4>
+                <a id="defaultOpen" class="link-group-pro"  onclick="openTabGroup(event, 'group1', this)">Furniture</a>
+                <a class="link-group-pro" onclick="openTabGroup(event, 'group2', this)">Decorative</a>
+                <a class="link-group-pro" onclick="openTabGroup(event, 'group3', this)">Lighting</a>
+                <a class="link-group-pro" onclick="openTabGroup(event, 'group4', this)">Outdoor</a>
+                <a class="link-group-pro" onclick="openTabGroup(event, 'group5', this)">Storage</a>
+            </div>
+          </div>
+          <!-- Phần chứa từng group product -->
+          <div class="products-content">
+
+            <!-- Group 1 -->
+            <div class="group-products" id="group1">
+              
+              <!-- Phần chuyển slide -->
+              <span class="previous control-slide-product" onclick="plusSlides(-1)"><i class="fa-solid fa-chevron-left"></i></span>
+              
+              <!-- Phần chứa tất cả sản phẩm -->
+              <div class="all-products">
+                <div class="product">
+                  <div class="img-product">
+                    <a href="#product1"><img class="img-disc-product" src="./assets/images/pro1.jpeg" alt="Andes 3-Piece Ottoman Sectional (90"–105")"></a>
+                    
+                    <!-- discout price -->
+                    <div class="discout-pro pro1">
+                      <span>-20%</span>
+                    </div>
+                  </div>
+                  <div class="info-product">
+                    <h5 class="title-product"><a href="#product1">Andes 3-Piece Ottoman Sectional (90"–105")</a></h5>
+                    <ul class="rating">
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-regular fa-star"></i></li>
+                    </ul>
+                    <span class="discout-price">
+                      $ 2.698
+                    </span>
+                    <span class="regular-price">
+                      $ 4.198
+                    </span>
+                  </div>
+                </div>
+                <div class="product">
+                  <div class="img-product">
+                    <a href="#TouchwoodChair"><img class="img-disc-product" src="./assets/images/pro2.jpeg" alt="Mid-Century 6-Drawer Dresser (56")"></a>
+                  
+                    <!-- discout price -->
+                    <div class="discout-pro pro2">
+                      <span>-40%</span>
+                    </div>
+                  </div>
+                  <div class="info-product">
+                    <h5 class="title-product"><a href="#product1">Mid-Century 6-Drawer Dresser (56")</a></h5>
+                    <ul class="rating">
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-regular fa-star"></i></li>
+                    </ul>
+                    <span class="discout-price">
+                      $ 89.00
+                    </span>
+                    <span class="regular-price">
+                      $ 129.99
+                    </span>
+                  </div>
+                </div>
+                <div class="product">
+                  <div class="img-product">
+                    <a href="#TouchwoodChair"><img class="img-disc-product" src="./assets/images/pro3.jpeg" alt="Mid-Century Rounded Expandable Dining Table (42"–80")"></a>
+                    <!-- discout price -->
+                    <div class="discout-pro pro3">
+                      <span>-30%</span>
+                    </div>
+                  </div>
+                  <div class="info-product">
+                    <h5 class="title-product"><a href="#product1">Mid-Century Rounded Expandable Dining Table (42"–80")</a></h5>
+                    <ul class="rating">
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-regular fa-star"></i></li>
+                    </ul>
+                    <span class="discout-price">
+                      $ 59.00
+                    </span>
+                    <span class="regular-price">
+                      $ 69.00
+                    </span>
+                  </div>
+                </div>
+
+                <div class="product">
+                  <div class="img-product">
+                    <a href="#TouchwoodChair"><img class="img-disc-product" src="./assets/images/pro4.jpeg" alt="Mid-Century Executive Desk (74")"></a>
+                    <!-- discout price -->
+                    <div class="discout-pro pro3">
+                      <span>-30%</span>
+                    </div>
+                  </div>
+                  <div class="info-product">
+                    <h5 class="title-product"><a href="#product1">Mid-Century Executive Desk (74")</a></h5>
+                    <ul class="rating">
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-regular fa-star"></i></li>
+                    </ul>
+                    <span class="discout-price">
+                      $ 1.449
+                    </span>
+                    <span class="regular-price">
+                      $ 1.749
+                    </span>
+                  </div>
+                </div>
+
+                <div class="product">
+                  <div class="img-product">
+                    <a href="#TouchwoodChair"><img class="img-disc-product" src="./assets/images/pro5.jpeg" alt="Mid-Century Bookshelf w/ Drawer (38")"></a>
+                    <!-- discout price -->
+                    <div class="discout-pro pro3">
+                      <span>-20%</span>
+                    </div>
+                  </div>
+                  <div class="info-product">
+                    <h5 class="title-product"><a href="#product1">Mid-Century Bookshelf w/ Drawer (38")</a></h5>
+                    <ul class="rating">
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-regular fa-star"></i></li>
+                    </ul>
+                    <span class="discout-price">
+                      $ 699
+                    </span>
+                    <span class="regular-price">
+                      $ 899
+                    </span>
+                  </div>
                 </div>
               </div>
-              <div class="content-slide">
-                <h1 class="h1-slide">  
-                  Get a Free Quote
-                </h1>
-                <p class="p-slide">One day however a small line of blind text by the name of Lorem Ipsum 
-                  <br>
-                  decided to leave for the far World of Grammar.
-                </p>
-                <a href="#contact" class="main-btn">Contact Us ></a> 
+
+              <!-- Phần chuyển slide -->
+              <span class="next control-slide-product" onclick="plusSlides(1)"><i class="fa-solid fa-angle-right"></i></span>              
+            </div>  
+            
+            <!-- Group 2 -->
+            <div class="group-products" id="group2">
+
+              <!-- Phần chuyển slide -->
+              <span class="previous control-slide-product" onclick="plusSlides(-1)"><i class="fa-solid fa-chevron-left"></i></span>
+              
+              <!-- Phần chứa tất cả sản phẩm -->
+              <div class="all-products">
+                <div class="product">
+                  <div class="img-product">
+                    <a href="#product1"><img class="img-disc-product" src="./assets/images/deco1.jpeg" alt="Mej Mej Modern Jungle Peel & Stick Wall Decals"></a>
+                    
+                    <!-- discout price -->
+                    <div class="discout-pro pro1">
+                      <span>-30%</span>
+                    </div>
+                  </div>
+                  <div class="info-product">
+                    <h5 class="title-product"><a href="#product1">Mej Mej Modern Jungle Peel & Stick Wall Decals</a></h5>
+                    <ul class="rating">
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-regular fa-star"></i></li>
+                    </ul>
+                    <span class="discout-price">
+                      $ 127.00
+                    </span>
+                    <span class="regular-price">
+                      $ 159.00
+                    </span>
+                  </div>
+                </div>
+                <div class="product">
+                  <div class="img-product">
+                    <a href="#TouchwoodChair"><img class="img-disc-product" src="./assets/images/deco2.jpeg" alt="Mej Mej Warrick The Whale Peel & Stick Wall Decals"></a>
+                  
+                    <!-- discout price -->
+                    <div class="discout-pro pro2">
+                      <span>-40%</span>
+                    </div>
+                  </div>
+                  <div class="info-product">
+                    <h5 class="title-product"><a href="#product1">Mej Mej Warrick The Whale Peel & Stick Wall Decals</a></h5>
+                    <ul class="rating">
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-regular fa-star"></i></li>
+                    </ul>
+                    <span class="discout-price">
+                      $ 111.00
+                    </span>
+                    <span class="regular-price">
+                      $ 129.00
+                    </span>
+                  </div>
+                </div>
+                <div class="product">
+                  <div class="img-product">
+                    <a href="#TouchwoodChair"><img class="img-disc-product" src="./assets/images/deco3.jpeg" alt="Giraffe Storage Basket"></a>
+                    <!-- discout price -->
+                    <div class="discout-pro pro3">
+                      <span>-20%</span>
+                    </div>
+                  </div>
+                  <div class="info-product">
+                    <h5 class="title-product"><a href="#product1">Giraffe Storage Basket</a></h5>
+                    <ul class="rating">
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-regular fa-star"></i></li>
+                    </ul>
+                    <span class="discout-price">
+                      $ 59.00
+                    </span>
+                    <span class="regular-price">
+                      $ 69.00
+                    </span>
+                  </div>
+                </div>
               </div>
+
+              <!-- Phần chuyển slide -->
+              <span class="next control-slide-product"><i class="fa-solid fa-angle-right"></i></span>                  
             </div>
 
-            <!-- Slide 3 -->
-            <div class="slide fade" id="sl3">
-              <div class="image-slide">
-                <img class="imgSlide" src="./assets/images/slide3.webp" alt="winter sale! is here">
-                <div class="discout-slide">
-                  <p>
-                    50%
-                    <br>
-                    OFF
-                  </p>
+            <!-- Group 3 -->
+            <div class="group-products" id="group3">
+
+              <!-- Phần chuyển slide -->
+              <span class="previous control-slide-product" onclick="plusSlides(-1)"><i class="fa-solid fa-chevron-left"></i></span>
+              
+              <!-- Phần chứa tất cả sản phẩm -->
+              <div class="all-products">
+                <div class="product">
+                  <div class="img-product">
+                    <a href="#product1"><img class="img-disc-product" src="./assets/images/light1.jpeg" alt="Flora Table Lamp"></a>
+                    
+                    <!-- discout price -->
+                    <div class="discout-pro pro1">
+                      <span>-40%</span>
+                    </div>
+                  </div>
+                  <div class="info-product">
+                    <h5 class="title-product"><a href="#product1">Flora Table Lamp</a></h5>
+                    <ul class="rating">
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-regular fa-star"></i></li>
+                    </ul>
+                    <span class="discout-price">
+                      $ 120.00
+                    </span>
+                    <span class="regular-price">
+                      $ 169.00
+                    </span>
+                  </div>
+                </div>
+                <div class="product">
+                  <div class="img-product">
+                    <a href="#TouchwoodChair"><img class="img-disc-product" src="./assets/images/light2.jpeg" alt="Acrylic Collectors Table Lamp"></a>
+                  
+                    <!-- discout price -->
+                    <div class="discout-pro pro2">
+                      <span>-20%</span>
+                    </div>
+                  </div>
+                  <div class="info-product">
+                    <h5 class="title-product"><a href="#product1">Acrylic Collectors Table Lamp</a></h5>
+                    <ul class="rating">
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-regular fa-star"></i></li>
+                    </ul>
+                    <span class="discout-price">
+                      $ 159.00
+                    </span>
+                    <span class="regular-price">
+                      $ 179.00
+                    </span>
+                  </div>
+                </div>
+                <div class="product">
+                  <div class="img-product">
+                    <a href="#TouchwoodChair"><img class="img-disc-product" src="./assets/images/light3.jpeg" alt="Sarah Sherman Samuel Metal Sphere Table Lamp & Pleated Shade"></a>
+                    <!-- discout price -->
+                    <div class="discout-pro pro3">
+                      <span>-20%</span>
+                    </div>
+                  </div>
+                  <div class="info-product">
+                    <h5 class="title-product"><a href="#product1">Sarah Sherman Samuel Metal Sphere Table Lamp & Pleated Shade</a></h5>
+                    <ul class="rating">
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-regular fa-star"></i></li>
+                    </ul>
+                    <span class="discout-price">
+                      $ 229.00
+                    </span>
+                    <span class="regular-price">
+                      $ 249.00
+                    </span>
+                  </div>
+                </div>
+              </div> 
+              <!-- Phần chuyển slide -->
+              <span class="next control-slide-product"><i class="fa-solid fa-angle-right"></i></span>   
+            </div>
+            
+            <!-- Group 4 -->
+            <div class="group-products" id="group4">
+
+              <!-- Phần chuyển slide -->
+              <span class="previous control-slide-product" onclick="plusSlides(-1)"><i class="fa-solid fa-chevron-left"></i></span>
+              
+              <!-- Phần chứa tất cả sản phẩm -->
+              <div class="all-products">              
+                <div class="product">
+                  <div class="img-product">
+                    <a href="#product1"><img class="img-disc-product" src="./assets/images/outdoor1.jpeg" alt="Get The Look: Front Porch Decorating"></a>
+                    
+                    <!-- discout price -->
+                    <div class="discout-pro pro1">
+                      <span>-10%</span>
+                    </div>
+                  </div>
+                  <div class="info-product">
+                    <h5 class="title-product"><a href="#product1">Get The Look: Front Porch Decorating</a></h5>
+                    <ul class="rating">
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <span class="discout-price">
+                      $ 456.00
+                    </span>
+                    <span class="regular-price">
+                      $ 466.65
+                    </span>
+                  </div>
+                </div>
+                <div class="product">
+                  <div class="img-product">
+                    <a href="#TouchwoodChair"><img class="img-disc-product" src="./assets/images/outdoor2.jpeg" alt="Portside Outdoor Dining Table (76.5"), Benches (66") & Solid Wood Chairs Set"></a>
+                  
+                    <!-- discout price -->
+                    <div class="discout-pro pro2">
+                      <span>-20%</span>
+                    </div>
+                  </div>
+                  <div class="info-product">
+                    <h5 class="title-product"><a href="#product1">Portside Outdoor Dining Table (76.5"), Benches (66") & Solid Wood Chairs Set</a></h5>
+                    <ul class="rating">
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-regular fa-star"></i></li>
+                    </ul>
+                    <span class="discout-price">
+                      $ 1.059.00
+                    </span>
+                    <span class="regular-price">
+                      $ 1.079.10
+                    </span>
+                  </div>
+                </div>
+                <div class="product">
+                  <div class="img-product">
+                    <a href="#TouchwoodChair"><img class="img-disc-product" src="./assets/images/outdoor3.jpeg" alt="Fluted Side Table (13"–16")"></a>
+                    <!-- discout price -->
+                    <div class="discout-pro pro3">
+                      <span>-20%</span>
+                    </div>
+                  </div>
+                  <div class="info-product">
+                    <h5 class="title-product"><a href="#product1">Fluted Side Table (13"–16")</a></h5>
+                    <ul class="rating">
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-regular fa-star"></i></li>
+                    </ul>
+                    <span class="discout-price">
+                      $ 119.99
+                    </span>
+                    <span class="regular-price">
+                      $ 139.99
+                    </span>
+                  </div>
                 </div>
               </div>
-              <div class="content-slide">
-                <h1 class="h1-slide">  
-                  Winter Sale! is Here
-                </h1>
-                <p class="p-slide">One day however a small line of blind text by the name of Lorem Ipsum 
-                  <br>
-                  decided to leave for the far World of Grammar.
-                </p>
-                <a href="#contact" class="main-btn">Contact Us ></a> 
+              <!-- Phần chuyển slide -->
+              <span class="next control-slide-product"><i class="fa-solid fa-angle-right"></i></span>
+            </div>
+
+            <!-- Group 5 -->
+            <div class="group-products" id="group5">
+
+              <!-- Phần chuyển slide -->
+              <span class="previous control-slide-product" onclick="plusSlides(-1)"><i class="fa-solid fa-chevron-left"></i></span>
+              
+              <!-- Phần chứa tất cả sản phẩm -->
+              <div class="all-products">              
+                <div class="product">
+                  <div class="img-product">
+                    <a href="#product1"><img class="img-disc-product" src="./assets/images/sto1.jpeg" alt="Anton Media Console (68"–80")"></a>
+                    
+                    <!-- discout price -->
+                    <div class="discout-pro pro1">
+                      <span>-10%</span>
+                    </div>
+                  </div>
+                  <div class="info-product">
+                    <h5 class="title-product"><a href="#product1">Anton Media Console (68"–80")</a></h5>
+                    <ul class="rating">
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <span class="discout-price">
+                      $ 1.899
+                    </span>
+                    <span class="regular-price">
+                      $ 1.999
+                    </span>
+                  </div>
+                </div>
+                <div class="product">
+                  <div class="img-product">
+                    <a href="#TouchwoodChair"><img class="img-disc-product" src="./assets/images/sto2.jpeg" alt="Pictograph Media Console (84")"></a>
+                  
+                    <!-- discout price -->
+                    <div class="discout-pro pro2">
+                      <span>-10%</span>
+                    </div>
+                  </div>
+                  <div class="info-product">
+                    <h5 class="title-product"><a href="#product1">Pictograph Media Console (84")</a></h5>
+                    <ul class="rating">
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-regular fa-star"></i></li>
+                    </ul>
+                    <span class="discout-price">
+                      $ 1.799
+                    </span>
+                    <span class="regular-price">
+                      $ 1.899
+                    </span>
+                  </div>
+                </div>
+                <div class="product">
+                  <div class="img-product">
+                    <a href="#TouchwoodChair"><img class="img-disc-product" src="./assets/images/sto3.jpeg" alt="Andes Side Storage Bed"></a>
+                    <!-- discout price -->
+                    <div class="discout-pro pro3">
+                      <span>-30%</span>
+                    </div>
+                  </div>
+                  <div class="info-product">
+                    <h5 class="title-product"><a href="#product1">Andes Side Storage Bed</a></h5>
+                    <ul class="rating">
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-regular fa-star"></i></li>
+                    </ul>
+                    <span class="discout-price">
+                      $ 1.699
+                    </span>
+                    <span class="regular-price">
+                      $ 2.999
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <!-- Phần chuyển slide -->
+              <span class="next control-slide-product"><i class="fa-solid fa-angle-right"></i></span>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section id="services">
+        <div class="services-container">
+          <div class="row">
+            <div class="services-title">
+              <h5 class="ser-title">
+                <span class="ser-line"></span>
+                Our Story
+              </h5>
+              <h3 class="ser-title2">Build Your Sweet Home</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm od tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+            </div>
+          </div>
+          <div class="row">
+            <!-- cột 1 -->
+            <div class="colum1">
+              <img class="img-service" src="./assets/images/services.jpeg" alt="Serviecs">
+              <a href="#" class="main-btn mt-30">Read More ></a>
+            </div>
+
+            <!-- cột 2 -->
+            <div class="colum2">
+              <div class="content-services">
+                <!-- cột trái -->
+                <div class="content-ser">
+                  <div class="cell-ser">
+                    <div class="icon-ser">
+                      <i class="fa-solid fa-grip"></i>  
+                    </div>
+                    <div class="content-cell">
+                      <h5 class="title-cell">Furnitures</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm od tempor.</p>
+                    </div>
+                  </div>
+                  <div class="cell-ser mt-30">
+                    <div class="icon-ser">
+                      <i class="fa-solid fa-pen-ruler"></i>    
+                    </div>
+                    <div class="content-cell">
+                      <h5 class="title-cell">Decoration</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm od tempor.</p>
+                    </div>
+                  </div>
+                </div>
+                  <!-- cột phải -->
+                <div class="content-ser">
+                  <div class="cell-ser mt-30">
+                    <div class="icon-ser">
+                      <i class="fa-solid fa-hand-holding-heart"></i>
+                    </div>
+                    <div class="content-cell">
+                      <h5 class="title-cell">Consultancy</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm od tempor.</p>
+                    </div>
+                  </div>
+                  <div class="cell-ser mt-30">
+                    <div class="icon-ser">
+                      <i class="fa-regular fa-newspaper"></i>
+                    </div>
+                    <div class="content-cell">
+                      <h5 class="title-cell">Custom Orders</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm od tempor.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="slide-social">
-          <span class="line"></span>
-          <a href="!#" class="icon-slide-social">
-            <i class="fa-brands fa-facebook"></i>
-          </a>
-          <a href="!#" class="icon-slide-social">
-            <i class="fa-brands fa-twitter"></i>
-          </a>
-          <a href="!#" class="icon-slide-social">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
+      </section>
+
+      <!-- Portfolio -->
+      <section id="portfolio">
+        <div class="container-portfolio">
+          <div class="row-por">
+            <div class="title-por">
+              <h2 class="title1-por">Showcase</h2>
+            </div>
+            <div class="content-por">
+               <p class="content2-por">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo.</p>   
+            </div>
+          </div>
+          <div class="row-por">
+            <div class="slider-por">
+              <span class="prev-por" onclick="plusSlides(-1)">
+                <i class="fa-solid fa-arrow-left-long"></i>
+              </span>
+              <div class="slides-por .fade">
+                <div class="slide-por">
+                  <img src="./assets/images/por1.jpeg" alt="Showcase">
+                  <a class="main-btn" href="#">Full Preview</a>
+                </div>
+                <div class="slide-por .fade">
+                  <img src="./assets/images/por2.webp" alt="Showcase">
+                  <a class="main-btn" href="#">Full Preview</a>
+                </div>
+              </div>
+              <span class="next-por" onclick="plusSlides(1)">
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </span>
+            </div>
+          </div>
         </div>
-        <ul class="slider-dot">
-          <li class="dot"><a href="#sl1"></a></li>
-          <li class="dot"><a href="#sl2"></a></li>
-          <li class="dot"><a href="#sl3"></a></li>
-        </ul>
-      </div>
-    </section>
-    <div class="container">
+      </section>
+
       <!-- Team -->
-      <section class="team-area">
+      <section id="team" class="team-area">
         <div class="container">
           <div class="container-bg">
             <div class="container-tle">
@@ -166,13 +818,13 @@
                 <img
                   src="./assets/images/avatar-1.webp"
                   alt="avatar-1"
-                  class="avatar"
+                  class="avatarr"
                 />
                 <div class="info-name">
                   <h4><a href="#!">Celina Gomez</a></h4>
                 </div>
                 <div class="info-function">
-                  <p>FOUNDER</p>
+                  <p>GENERAL HEADQUARTERS</p>
                 </div>
                 <div class="social">
                   <span>
@@ -197,13 +849,13 @@
                 <img
                   src="./assets/images/avatar-2.webp"
                   alt="avatar-2"
-                  class="avatar"
+                  class="avatarr"
                 />
                 <div class="info-name">
                   <h4><a href="#!">Patric Green</a></h4>
                 </div>
                 <div class="info-function">
-                  <p>CONSULTANT</p>
+                  <p>DIRECTOR MANAGER</p>
                 </div>
                 <div class="social">
                   <span>
@@ -321,7 +973,7 @@
       </div>
 
       <!-- Blog -->
-      <div id="blog" class="container-blog">
+      <section id="blog" class="container-blog">
         <div class="blog-title">
           <h3>From The Blog</h3>
           <p>
@@ -329,11 +981,11 @@
             the majority have suffered alteration in some form.
           </p>
         </div>
-        <div class="blog-frame">
+        <div class="blog-frame ">
           <!-- Blog - 1 -->
           <div class="blog-frame-1 btn">
             <div class="blog-image">
-              <img src="./assets/images/blog-1.webp" alt="blog-1" />
+              <img src="./assets/images/blog-1.webp" alt="blog-1"  class="img-disc-product"/>
             </div>
             <div class="blog-content">
               <h4 class="title">
@@ -343,7 +995,7 @@
             </div>
             <div class="blog-name">
               <div class="blog-name-avatar">
-                <img src="./assets/images/avatar-5.jpg" alt="avatar-5" />
+                <img src="./assets/images/avatar-5.jpg" alt="avatar-5"/>
                 <p>
                   <a href="#!">J. PARKER</a>
                 </p>
@@ -359,7 +1011,7 @@
            <!-- Blog 2 -->
            <div class="blog-frame-2 btn">
             <div class="blog-image">
-              <img src="./assets/images/blog-2.webp" alt="blog-2" />
+              <img src="./assets/images/blog-2.webp" alt="blog-2" class="img-disc-product" />
             </div>
             <div class="blog-content">
               <h4 class="title">
@@ -385,7 +1037,7 @@
           <!-- Blog 3 -->
           <div class="blog-frame-3 btn">
             <div class="blog-image">
-              <img src="./assets/images/blog-3.webp" alt="blog-3" />
+              <img src="./assets/images/blog-3.webp" alt="blog-3" class="img-disc-product" />
             </div>
             <div class="blog-content">
               <h4 class="title">
@@ -409,10 +1061,10 @@
             </div>
           </div>
         </div>
-    </div>
+      </section>
 
     <!-- Contact -->
-    <div class="contact" id="contact">
+    <section class="contact" id="contact">
       <div class="contact-title">
         <h2>Get In Touch</h2>
       </div>
@@ -445,132 +1097,140 @@
           </div>
         </div>
         <div class="contact-form">
-          <div class="name-email">
-            <div class="name">
-              <input type="text" name="your-name" required placeholder="    Enter Your Name">
+          <form action="" method="POST" onsubmit = "return validateForm()">
+            <div class="name-email">
+              <div class="name">
+                <input type="text" name="your-name" id="name" required placeholder="Enter Your Name">
+              </div>
+              <div class="email">
+                <input type="email" name="your-email" id="email" required placeholder="Enter Your Email">
+              </div>
             </div>
-            <div class="email">
-              <input type="email" name="your-email" required placeholder="    Enter Your Email">
+            <div class="message">
+              <textarea name="cl-message" class="message" id="message" required cols="30" rows="10" placeholder="    Enter Your Message"></textarea>
             </div>
+            <button type="submit" class="button" id="btn">CONTACT NOW</button>
           </div>
-          <div class="message">
-            <textarea name="cl-message" class="message" required cols="30" rows="10" placeholder="    Enter Your Message"></textarea>
-          </div>
-          <div class="button">CONTACT NOW</div>
-        </div>
+          </form>
       </div>
-    </div>
+    </section>
 
     <!-- footer -->
-    <div class="footer" id="footer">
-      <div class="block-footer">
-        <div class="furnish">
-          <div class="icon-furnish">
-            <img src="./assets/images/icon.webp" alt="furnish">
-          </div>
-          <p>
-            Gravida nibh vel velit auctor aliquetn quibibendum auci elit cons
-            equat ipsutis sem nibh id elit.
-          </p>
-          <div class="social-icons">
-            <span>
+    <section class="footer-area" id="footer">
+      <div class="container-ft">
+        <div class="footer-inner pt-75 pb-120">
+          <div class="row">
+            <!-- logo -->
+            <div class="footer-logo">
               <a href="#!">
-                <i class="fa-brands fa-facebook"></i>
+                <img src="./assets/images/icon.webp" alt="Furnish">
               </a>
-            </span>
-            <span>
-              <a href="#!">
-                <i class="fa-brands fa-twitter"></i>
-              </a>
-            </span>
-            <span>
-              <a href="#!">
-                <i class="fa-brands fa-instagram"></i>
-              </a>
-            </span>
-          </div>
-        </div>
-        <div class="shc-info">
-          <div class="services">
-            <h5 class="shc-font">Services</h5>
-            <div class="services-list list">
-              <span>
-                <a href="#!">Architechture Design</a>
-              </span>
-              <span>
-                <a href="#!">Interior Design</a>
-              </span>
-              <span>
-                <a href="#!">Autocad Services</a>
-              </span>
-              <span>
-                <a href="#!">Lighting Design</a>
-              </span>
-              <span>
-                <a href="#!">Poster Design</a>
-              </span>
+              <p class="mt-10">Gravida nibh vel velit auctor aliquetn quibibendum auci elit cons equat ipsutis sem nibh id elit.</p>
+              <div class="social-icons">
+                <span>
+                  <a href="#!">
+                    <i class="fa-brands fa-facebook"></i>
+                  </a>
+                </span>
+                <span>
+                  <a href="#!">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </span>
+                <span>
+                  <a href="#!">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </span>
+              </div>
             </div>
-          </div>
-          <div class="help">
-            <h5 class="shc-font">Help</h5>
-            <div class="help-list list">
-              <span>
-                <a href="#!">Forum</a>
-              </span>
-              <span>
-                <a href="#!">Blog</a>
-              </span>
-              <span>
-                <a href="#!">Help Center</a>
-              </span>
-              <span>
-                <a href="#!">Contact Us</a>
-              </span>
-              <span>
-                <a href="#!">Privacy Policy</a>
-              </span>
+            
+            <!-- Services -->
+            <div class="ft mt-50s">
+              <h5 class="footer-title">Services</h5>
+              <div class="services-list list">
+                <span>
+                  <a href="#!">Architechture Design</a>
+                </span>
+                <span>
+                  <a href="#!">Interior Design</a>
+                </span>
+                <span>
+                  <a href="#!">Autocad Services</a>
+                </span>
+                <span>
+                  <a href="#!">Lighting Design</a>
+                </span>
+                <span>
+                  <a href="#!">Poster Design</a>
+                </span>
+              </div>
             </div>
-          </div>
-          <div class="contacts">
-            <h5 class="shc-font">Contact Info</h5>
-            <div class="contact-info-list list">
-              <div class="phone-title list">
-                <span>Phone :</span>
-                <div class="phone-number">
-                  <p>+84 1234 56789</p>
-                  <p>+84 98765 54321</p>
+            <!-- Help -->
+            <div class="ft mt-50s">
+              <h5 class="footer-title">Help</h5>
+              <div class="help-list list">
+                <span>
+                  <a href="#!">Forum</a>
+                </span>
+                <span>
+                  <a href="#!">Blog</a>
+                </span>
+                <span>
+                  <a href="#!">Help Center</a>
+                </span>
+                <span>
+                  <a href="#!">Contact Us</a>
+                </span>
+                <span>
+                  <a href="#!">Privacy Policy</a>
+                </span>
+              </div> 
+            </div>
+            <!-- Contacts -->
+            <div class="ft mt-50s">
+              <h5 class="footer-title">Contact Info</h5>
+              <div class="contact-info-list list">
+                <div class="phone-title list flex">
+                  <span>Phone :</span>
+                  <div class="phone-number color">
+                    <p>+84 1234 56789</p>
+                    <p>+84 98765 54321</p>
+                  </div>
+                </div>
+              </div>
+              <div class="email-title list flex">
+                <span>Email :</span>
+                <div class="mail color">
+                  <p>contact@yourmail.com</p>
+                  <p>support@yourmail.com</p>
+                </div>
+              </div>
+              <div class="address-title list flex">
+                <span>Address:</span>
+                <div class="address color">
+                  <p>5078 Jensen Key, Port Kaya,WV 73505</p>
                 </div>
               </div>
             </div>
-            <div class="email-title list">
-              <span>Email :</span>
-              <div class="mail">
-                <p>contact@yourmail.com</p>
-                <p>support@yourmail.com</p>
-              </div>
-            </div>
-            <div class="address-title list">
-              <span>Address:</span>
-              <div class="address">
-                <p>5078 Jensen Key, Port Kaya,WV 73505</p>
-              </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="row">
+            <div class="copyright text-center">
+              <p>Crafted by 
+                <a href="#!">UIdeck</a>
+              </p>
             </div>
           </div>
         </div>
       </div>
-      <!-- copy-right -->
-    <div class="copy-right">
-      <div class="straight-line">
-        <span class="sl"></span>
-      </div>
-      <div class="copy-right-content">
-        <p>Crafted by</p>
-        <span><a href="#!">UIdeck</a></span>
-      </div>
-    </div>
-    </div>
+    </section>
 
-
+    <!-- backtotop -->
+    <a href="#" class="back-to-top" onclick="topFunction()" id="myBtn"  title="back to top">
+      <i class="fa-solid fa-angle-up"></i>
+    </a>
     <script
       src="https://kit.fontawesome.com/4afbfde5f9.js"
       crossorigin="anonymous"
