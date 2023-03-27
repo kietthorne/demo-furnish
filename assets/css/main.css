@@ -962,6 +962,9 @@
   .icon-nav {
     display: none;
   }
+  .ml {
+    margin-left: 207px;
+  }
 }
 @media screen and (min-width: 1400px) and (max-width: 1600px) {
   .header-content2 {
@@ -975,6 +978,9 @@
   }
   .icon-nav {
     display: none;
+  }
+  .ml {
+    margin-left: 38px;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1399px) {
@@ -992,6 +998,9 @@
   }
   .icon-nav {
     display: none;
+  }
+  .ml {
+    margin-left: 205px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023.98px) {
@@ -1062,6 +1071,9 @@
   .change .bar3 {
     transform: translate(0, -11px) rotate(45deg);
   }
+  p {
+    margin-left: 38px;
+  }
 }
 @media screen and (min-width: 567px) and (max-width: 767.3px) {
   .logo1 {
@@ -1130,6 +1142,9 @@
   }
   .change .bar3 {
     transform: translate(0, -11px) rotate(45deg);
+  }
+  .ml {
+    margin-left: 38px;
   }
 }
 @media screen and (min-width: 450px) and (max-width: 566.98px) {
@@ -1200,6 +1215,9 @@
   .change .bar3 {
     transform: translate(0, -11px) rotate(45deg);
   }
+  .ml {
+    margin-left: 38px;
+  }
 }
 @media screen and (min-width: 280px) and (max-width: 440px) {
   .logo1 {
@@ -1268,6 +1286,9 @@
   }
   .change .bar3 {
     transform: translate(0, -11px) rotate(45deg);
+  }
+  p {
+    margin-left: 38px;
   }
 }
 #home {
@@ -1451,6 +1472,9 @@ li.dot.activedot {
   .slider .slider-wrapper .slider-main .slide .content-slide .imgSlide {
     width: 100%;
   }
+  .slide-social {
+    bottom: -2%;
+  }
 }
 @media screen and (min-width: 991.98px) and (max-width: 1199.96px) {
   .slider .slider-wrapper .slider-main .slide .image-slide .discout-slide {
@@ -1458,6 +1482,7 @@ li.dot.activedot {
   }
   .slider .slider-wrapper .slider-main .slide .image-slide .discout-slide p {
     margin-top: 15px;
+    margin-left: 0;
   }
   .slider .slider-wrapper .slider-main .slide .content-slide .imgSlide {
     width: 100%;
@@ -1467,7 +1492,7 @@ li.dot.activedot {
     line-height: 60px;
   }
   .slide-social {
-    bottom: 0px;
+    bottom: -2%;
   }
   .slide-social .line {
     width: 30%;
@@ -1486,6 +1511,7 @@ li.dot.activedot {
   }
   .slider .slider-wrapper .slider-main .slide .image-slide .discout-slide p {
     margin-top: 15px;
+    margin-left: -4px;
   }
   .slider .slider-wrapper .slider-main .slide .content-slide {
     width: 100%;
@@ -1530,31 +1556,7 @@ li.dot.activedot {
     margin-right: 20px;
   }
 }
-@media screen and (min-width: 450px) and (max-width: 566px) {
-  .slider {
-    width: 100%;
-  }
-  .slider .slider-wrapper .slider-main .slide .image-slide {
-    display: none;
-  }
-  .slider .slider-wrapper .slider-main .slide .content-slide {
-    width: 100%;
-    margin-left: 0px;
-    padding: 40px 15px 50px;
-  }
-  .h1-slide {
-    font-size: 42px;
-    line-height: 60px;
-  }
-  .slide-social {
-    bottom: 0px;
-  }
-  .slide-social .line {
-    width: 40%;
-    margin-right: 20px;
-  }
-}
-@media screen and (min-width: 280px) and (max-width: 440px) {
+@media screen and (min-width: 280px) and (max-width: 453.98px) {
   .slider {
     width: 100%;
   }
@@ -1861,18 +1863,7 @@ li.dot.activedot {
     max-width: 100%;
   }
 }
-@media (min-width: 1199.98px) and (max-width: 1023px) {
-  .container-portfolio {
-    width: 95%;
-  }
-  .container-portfolio .row-por {
-    display: block;
-  }
-  .container-portfolio .row-por .content-por {
-    max-width: 100%;
-  }
-}
-@media (min-width: 991.98px) and (max-width: 1199.96px) {
+@media (min-width: 991.98px) and (max-width: 1199.98px) {
   .container-portfolio {
     width: 95%;
   }
@@ -2084,11 +2075,6 @@ li.dot.activedot {
   .services-container {
     width: 95%;
     margin-top: 7px;
-  }
-}
-@media (min-width: 1199.98px) and (max-width: 1023px) {
-  .services-container {
-    width: 95%;
   }
 }
 @media (min-width: 991.98px) and (max-width: 1199.96px) {
@@ -2382,18 +2368,7 @@ li.dot.activedot {
 .previous i {
   font-size: 25px;
 }
-@media (min-width: 1199.98px) and (max-width: 1920px) {
-  .products-cotainer {
-    width: 90%;
-  }
-  .products-cotainer .products-content .group-products .control-slide-product {
-    margin-right: 24px;
-  }
-  .products-cotainer .products-content .group-products .all-products .product {
-    flex: 0 0 50%;
-  }
-}
-@media (min-width: 991.98px) and (max-width: 1199.96px) {
+@media (min-width: 1199.98px) and (max-width: 1023px) {
   .products-cotainer {
     width: 95%;
   }

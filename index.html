@@ -53,7 +53,8 @@
             <a class="nav" href="#contact">Contact</a>
           </div>
         </div>
-      
+        <!-- Show tên -->
+        <p class="ml" id="demo"></p>
     </header>
 
           <!-- Phần nội dung -->
@@ -1317,10 +1318,10 @@
           </div>
         </div>
         <div class="contact-form">
-          <form action="" method="POST" id="contactForm">
+          <form action="" method="POST" id="contactForm" class="contacForm" onsubmit="return false">
             <div class="name-email">
               <div class="name">
-                <input type="text" name="your-name" id="name" required placeholder="Enter Your Name">
+                <input type="text" name="yourName" id="name" required placeholder="Enter Your Name">
               </div>
               <div class="email">
                 <input type="email" name="your-email" id="yourEmail" required placeholder="Enter Your Email">
@@ -1329,9 +1330,10 @@
             <div class="message">
               <textarea name="cl-message" class="message" id="message" required cols="30" rows="10" placeholder="    Enter Your Message"></textarea>
             </div>
-            <button type="submit" class="button" id="btn" name="submit">CONTACT NOW</button>
-          </div>
+            <button type="submit" class="button" id="btn" name="submit" onclick="showten()">CONTACT NOW</button>
+            <h4 id="baoloi"></h4>
           </form>
+        </div>
       </div>
     </section>
 
