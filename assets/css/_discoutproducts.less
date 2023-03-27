@@ -13,43 +13,49 @@
 
   .disc-products {
     width: 555px;
-    margin: 0 15px;
+    padding: 0 15px;
     position: relative;
     overflow: hidden;
     display: block;
 
-    .img-disc-product {
-      width: 555px;
-      // thiết lập quá trình để phóng to img mất bao nhiêu thời gian
-      transition-duration: 0.5s;
-      // Safari
-      -webkit-transition-duration: 0.5s;
-      // Mozilla Firefox
-      -moz-transition-duration: 0.5s;
-      // Opera
-      -o-transition-duration: 0.5s;
-      // IE
-      -ms-transition-duration: 0.5s;
+    .disc-img {
+      width: 100%;
+      overflow: hidden;
+      display: block;
 
-      &:hover {
-        transform: scale(1.2);
-        -webkit-transform: scale(1.2);
-        -moz-transform: scale(1.2);
-        -o-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-        cursor: pointer;
+      .img-disc-product {
+        width: 100%;
+        // thiết lập quá trình để phóng to img mất bao nhiêu thời gian
+        transition-duration: 0.5s;
+        // Safari
+        -webkit-transition-duration: 0.5s;
+        // Mozilla Firefox
+        -moz-transition-duration: 0.5s;
+        // Opera
+        -o-transition-duration: 0.5s;
+        // IE
+        -ms-transition-duration: 0.5s;
+
+        &:hover {
+          transform: scale(1.2);
+          -webkit-transform: scale(1.2);
+          -moz-transform: scale(1.2);
+          -o-transform: scale(1.2);
+          -ms-transform: scale(1.2);
+          cursor: pointer;
+        }
       }
     }
 
     .content-discout {
-      width: 52%;
+      width: 70%;
       font-family: "Poppins", sans-serif;
       font-weight: 600;
+      margin: 0px;
       position: absolute;
       top: 0;
       left: 0;
-      margin-left: 32px;
-      margin-top: 50px;
+      padding: 45px 30px;
 
       .title-discout-pro {
         font-size: 24px;
@@ -71,5 +77,89 @@
   }
 }
 
-@media screen and (max-width: 912px) {
+@media (min-width: 1199.98px) and (max-width: 1920px) {
+  .discout-products-content {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    .disc-products {
+      width: 100%;
+
+      .content-discout {
+        padding: 0px 30px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 991.98px) and (max-width: 1199.96px) {
+  .discout-products-content {
+    width: 90%;
+    .disc-products {
+      .content-discout {
+        padding: 0px 30px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 991.96px) {
+  .discout-products-content {
+    width: 95%;
+    display: block;
+
+    .disc-products {
+      width: 100%;
+      margin: 12px 3px;
+
+      .content-discout {
+        width: 71%;
+        padding: 40px 27px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 454px) and (max-width: 575.98px) {
+  .discout-products-content {
+    width: 95%;
+    display: block;
+
+    .disc-products {
+      width: 100%;
+      padding: 15px 15px;
+
+      .content-discout {
+        margin: 12px 3px;
+        width: 70%;
+
+        .title-discout-pro {
+          font-size: 18px;
+          line-height: 28px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 453.98px) {
+  .discout-products-content {
+    width: 100%;
+    display: block;
+
+    .disc-products {
+      width: 100%;
+      padding: 15px 15px;
+
+      .content-discout {
+        width: 95%;
+        padding: 0px 20px;
+
+        .title-discout-pro {
+          font-size: 15px;
+          line-height: 25px;
+        }
+      }
+    }
+  }
 }

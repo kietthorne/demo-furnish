@@ -1,160 +1,301 @@
 // out: false
 
-@import './_variable.less';
+@import "./_variable.less";
 
 #portfolio {
-    padding-top: 100px;
-    padding-bottom: 130px;
+  padding-top: 100px;
+  padding-bottom: 130px;
 }
 
 .container-portfolio {
-    width: 80%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+  width: 80%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 
-    .row-por {
-        display: flex;
-        flex-wrap: wrap;
-        margin-right: -15px;
-        margin-left: -15px;
-    
-        .title-por {
-            flex: 0 0 33.333333%;
-            max-width: 33.333333%;
-            position: relative;
-            width: 100%;
-            padding-right: 15px;
-            padding-left: 15px;
-            padding-top: 25px;
-        
-            .title1-por {
-                font-size: 35px;
-                font-weight: 600;
-                color: @fifth-color;
-                margin: 0px;
-            }
-        }
+  .row-por {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
 
-        .content-por {
-            flex: 0 0 50%;
-            max-width: 50%;
-            position: relative;
-            width: 100%;
-            padding-right: 15px;
-            padding-left: 15px;
-            padding-top: 25px;
-        
-            .content2-por {
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 24px;
-                color: @second-color;
-                margin: 0px;
-            }
-        }
+    .title-por {
+      flex: 0 0 33.333333%;
+      max-width: 33.333333%;
+      position: relative;
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      padding-top: 25px;
+
+      .title1-por {
+        font-size: 35px;
+        font-weight: 600;
+        color: @fifth-color;
+        margin: 0px;
+      }
     }
+
+    .content-por {
+      flex: 0 0 50%;
+      max-width: 50%;
+      position: relative;
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      padding-top: 25px;
+
+      .content2-por {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        color: @second-color;
+        margin: 0px;
+      }
+    }
+  }
 }
 
 .slider-por {
-    flex: 0 0 100%;
-    max-width: 100%;
-    position: relative;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-top: 65px;
+  flex: 0 0 100%;
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 65px;
 
-    .prev-por {
-        position: absolute;
-        top: 65px;
-        z-index: 9;
-        right: 70px;
-        
-        &::before {
-            position: absolute;
-            content: '';
-            background-color: @third-color;
-            width: 2px;
-            height: 30px;
-            top: 50%;
-            right: 0;
-            -webkit-transform: translateY(-50%);
-            -moz-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-            -o-transform: translateY(-50%);
-            transform: translateY(-50%);
-        }
+  .prev-por {
+    position: absolute;
+    top: 65px;
+    z-index: 9;
+    right: 70px;
 
-        i {
-        width: 70px;
-        line-height: 50px;
-        background-color: @main-color;
-        color: @third-color;
-        font-size: 20px;
-        text-align: center;
-        cursor: pointer;
-        }
+    &::before {
+      position: absolute;
+      content: "";
+      background-color: @third-color;
+      width: 2px;
+      height: 30px;
+      top: 50%;
+      right: 0;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
     }
 
-    .next-por {
-        position: absolute;
-        top: 65px;
-        z-index: 9;
-        right: 0px;
-        
-        i {
-        width: 70px;
-        line-height: 50px;
-        background-color: @main-color;
-        color: @third-color;
-        font-size: 20px;
-        text-align: center;
-        cursor: pointer;
-        }
+    i {
+      width: 70px;
+      line-height: 50px;
+      background-color: @main-color;
+      color: @third-color;
+      font-size: 20px;
+      text-align: center;
+      cursor: pointer;
     }
+  }
+
+  .next-por {
+    position: absolute;
+    top: 65px;
+    z-index: 9;
+    right: 0px;
+
+    i {
+      width: 70px;
+      line-height: 50px;
+      background-color: @main-color;
+      color: @third-color;
+      font-size: 20px;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
 }
 
 .slides-por {
+  margin-right: 50px;
+  margin-bottom: 45px;
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+
+  .slide-por {
     margin-right: 50px;
     margin-bottom: 45px;
     position: relative;
-    display: block;
-    width: 100%;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    -webkit-transform: translate3d(0,0,0);
-    -moz-transform: translate3d(0,0,0);
-    -ms-transform: translate3d(0,0,0);
-    -o-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
 
-    .slide-por{
-        margin-right: 50px;
-        margin-bottom: 45px;
-        position: relative;
-        display: none;
-        float: left;
-        height: 100%;
-        min-height: 1px;
+    img {
+      width: 100%;
+      vertical-align: middle;
+      border-style: none;
+      max-width: 100%;
+    }
 
-        img {
-            width: 100%;
-            vertical-align: middle;
-            border-style: none;
-            max-width: 100%;
-        }
+    a {
+      position: absolute;
+      line-height: 78px;
+      padding: 0 70px;
+      left: 60px;
+      bottom: -40px;
+      font-size: 20px;
+      font-weight: 600;
+    }
+  }
+}
 
-        a {
-            position: absolute;
-            line-height: 78px;
-            padding: 0 70px;
-            left: 60px;
-            bottom: -40px;
-            font-size: 20px;
-            font-weight: 600;
+@media (min-width: 1199.98px) and (max-width: 1920px) {
+  .container-portfolio {
+    .row-por {
+      display: block;
+      .slides-por {
+        .slide-por {
+            width: 96%;
         }
     }
+
+      .content-por {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1199.98px) and (max-width: 1023px) {
+  .container-portfolio {
+    width: 95%;
+
+    .row-por {
+      display: block;
+
+      .content-por {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 991.98px) and (max-width: 1199.96px) {
+  .container-portfolio {
+    width: 95%;
+
+    .row-por {
+      display: block;
+
+      .content-por {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991.96px) {
+  .container-portfolio {
+    width: 95%;
+
+    .row-por {
+      display: block;
+
+      .content-por {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .slider-por {
+    .prev-por {
+      top: 30px;
+      right: 50px;
+
+      i {
+        width: 50px;
+      }
+    }
+
+    .next-por {
+      top: 30px;
+
+      i {
+        width: 50px;
+      }
+    }
+  }
+
+  .slides-por {
+    .slide-por {
+      margin-right: 0px;
+
+      a {
+        line-height: 48px;
+        padding: 0 40px;
+        font-size: 16px;
+        bottom: 20px;
+        left: 40px;
+      }
+    }
+  }
+}
+
+@media (min-width: 454px) and (max-width: 575.98px) {
+  .container-portfolio {
+    width: 95%;
+
+    .row-por {
+      display: block;
+
+      .content-por {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .slider-por {
+    .prev-por {
+      top: 30px;
+      right: 50px;
+      opacity: 0.5;
+
+      i {
+        width: 50px;
+      }
+    }
+
+    .next-por {
+      top: 30px;
+      opacity: 0.5;
+
+      i {
+        width: 50px;
+      }
+    }
+  }
+
+  .slides-por {
+    .slide-por {
+      margin-right: 0px;
+
+      a {
+        line-height: 48px;
+        padding: 0 40px;
+        font-size: 16px;
+        bottom: 20px;
+        left: 40px;
+      }
+    }
+  }
 }

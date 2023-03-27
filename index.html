@@ -14,7 +14,7 @@
     <div class="container">
 
       <!-- Phần đầu trang -->
-      <header class="header" id="top">
+      <header class="header">
 
         <!-- Header mobi -->
         <div class="header-content2">
@@ -23,13 +23,13 @@
           </a>
           <div id="menu2">
             <!-- Menu icon -->
-            <a class="active" href="#home">Home</a>
-            <a href="#products">Products</a>
-            <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#team">Team</a>
-            <a href="#blog">Blog</a>
-            <a href="#contact">Contact</a>
+            <a class="nav2 active2" href="#home">Home</a>
+            <a class="nav2" href="#products">Products</a>
+            <a class="nav2" href="#services">Services</a>
+            <a class="nav2" href="#portfolio">Portfolio</a>
+            <a class="nav2" href="#team">Team</a>
+            <a class="nav2" href="#blog">Blog</a>
+            <a class="nav2" href="#contact">Contact</a>
           </div>
           <div class="icon-nav" onclick="navMobiandChangeBtn(this)">
             <div class="bar1"></div>
@@ -37,13 +37,14 @@
             <div class="bar3"></div>
           </div>
         </div>
+
         <!-- Normal Header -->
         <div class="header-content1">
           <a href="index.html">
             <img class="logo1" src="./assets/images/icon.webp" alt="Furnish and Decor">
           </a>
-          <div class="menu1">
-            <a class="nav active" href="#home">Home</a>
+          <div class="menu1" id="menu1">
+            <a class="nav active1" href="#home">Home</a>
             <a class="nav" href="#products">Products</a>
             <a class="nav" href="#services">Services</a>
             <a class="nav" href="#portfolio">Portfolio</a>
@@ -52,7 +53,8 @@
             <a class="nav" href="#contact">Contact</a>
           </div>
         </div>
-      </header>
+      
+    </header>
 
           <!-- Phần nội dung -->
       <!-- Phần trang home - slide -->
@@ -67,7 +69,7 @@
                   <img class="imgSlide" src="./assets/images/slide1.webp" alt="sofa and armchairs">
                   <div class="discout-slide">
                     <p>
-                      50%
+                      -50%
                       <br>
                       OFF
                     </p>
@@ -90,7 +92,7 @@
                   <img class="imgSlide" src="./assets/images/slide2.webp" alt="winter sale! is here">
                   <div class="discout-slide">
                     <p>
-                      50%
+                      -20%
                       <br>
                       OFF
                     </p>
@@ -113,9 +115,9 @@
                   <img class="imgSlide" src="./assets/images/slide3.webp" alt="winter sale! is here">
                   <div class="discout-slide">
                     <p>
-                      50%
+                      Free
                       <br>
-                      OFF
+                      Quote
                     </p>
                   </div>
                 </div>
@@ -131,23 +133,25 @@
                 </div>
               </div>
             </div>
+            <!-- Phần social của slide -->
+            <div class="slide-social">
+              <span class="line"></span>
+              <a href="!#" class="icon-slide-social">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a href="!#" class="icon-slide-social">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="!#" class="icon-slide-social">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
           </div> 
-          <div class="slide-social">
-            <span class="line"></span>
-            <a href="!#" class="icon-slide-social">
-              <i class="fa-brands fa-facebook"></i>
-            </a>
-            <a href="!#" class="icon-slide-social">
-              <i class="fa-brands fa-twitter"></i>
-            </a>
-            <a href="!#" class="icon-slide-social">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-          </div>
+          <!-- Phần control dot -->
           <ul class="slider-dot">
-            <li class="dot"><a href="#sl1"></a></li>
-            <li class="dot"><a href="#sl2"></a></li>
-            <li class="dot"><a href="#sl3"></a></li>
+            <li class="dot" onclick="currentSlide(0)"></li>
+            <li class="dot" onclick="currentSlide(1)"></li>
+            <li class="dot" onclick="currentSlide(2)"></li>
           </ul>
         </div>
       </section>
@@ -156,14 +160,18 @@
       <section id="discout-products">
         <div class="discout-products-content">
           <div class="disc-products">
-              <img class="img-disc-product" src="./assets/images/collection1.jpeg" alt="Products">
+              <div class="disc-img">
+                <img class="img-disc-product" src="./assets/images/collection1.jpeg" alt="Products">
+              </div>
               <div class="content-discout">
                 <h4 class="title-discout-pro">High-quality furnitures For your home</h4>
                 <a href="#" class="view-colection">View Collection ></a>
               </div>
           </div>
           <div class="disc-products">
-            <img class="img-disc-product" src="./assets/images/collection2.jpeg" alt="Products">
+            <div class="disc-img">
+              <img class="img-disc-product" src="./assets/images/collection2.jpeg" alt="Products">
+            </div>
             <div class="content-discout">
               <h4 class="title-discout-pro">Hot Offer Discount up to 80%</h4>
               <a href="#" class="view-colection">View Collection ></a>
@@ -192,11 +200,11 @@
             <div class="group-products" id="group1">
               
               <!-- Phần chuyển slide -->
-              <span class="previous control-slide-product" onclick="plusSlides(-1)"><i class="fa-solid fa-chevron-left"></i></span>
+              <button class="previous control-slide-product" onclick="onChangeSlide('previous', 'slide-gr1', 'group1')"><i class="fa-solid fa-chevron-left"></i></button>
               
               <!-- Phần chứa tất cả sản phẩm -->
-              <div class="all-products">
-                <div class="product">
+              <div class="all-products" id="slide-gr1">
+                <div class="product" style='display: block;'>
                   <div class="img-product">
                     <a href="#product1"><img class="img-disc-product" src="./assets/images/pro1.jpeg" alt="Andes 3-Piece Ottoman Sectional (90"–105")"></a>
                     
@@ -222,7 +230,7 @@
                     </span>
                   </div>
                 </div>
-                <div class="product">
+                <div class="product" style='display: block;'>
                   <div class="img-product">
                     <a href="#TouchwoodChair"><img class="img-disc-product" src="./assets/images/pro2.jpeg" alt="Mid-Century 6-Drawer Dresser (56")"></a>
                   
@@ -248,7 +256,7 @@
                     </span>
                   </div>
                 </div>
-                <div class="product">
+                <div class="product" style='display: block;'>
                   <div class="img-product">
                     <a href="#TouchwoodChair"><img class="img-disc-product" src="./assets/images/pro3.jpeg" alt="Mid-Century Rounded Expandable Dining Table (42"–80")"></a>
                     <!-- discout price -->
@@ -328,18 +336,18 @@
               </div>
 
               <!-- Phần chuyển slide -->
-              <span class="next control-slide-product" onclick="plusSlides(1)"><i class="fa-solid fa-angle-right"></i></span>              
+              <button class="next control-slide-product" onclick="onChangeSlide('next', 'slide-gr1', 'group1')"><i class="fa-solid fa-angle-right"></i></button>              
             </div>  
             
             <!-- Group 2 -->
             <div class="group-products" id="group2">
 
               <!-- Phần chuyển slide -->
-              <span class="previous control-slide-product" onclick="plusSlides(-1)"><i class="fa-solid fa-chevron-left"></i></span>
+              <button class="previous control-slide-product" onclick="onChangeSlide('previous', 'slide-gr2', 'group2')"><i class="fa-solid fa-chevron-left"></i></button>
               
               <!-- Phần chứa tất cả sản phẩm -->
-              <div class="all-products">
-                <div class="product">
+              <div class="all-products" id="slide-gr2">
+                <div class="product" style="display: block;">
                   <div class="img-product">
                     <a href="#product1"><img class="img-disc-product" src="./assets/images/deco1.jpeg" alt="Mej Mej Modern Jungle Peel & Stick Wall Decals"></a>
                     
@@ -365,7 +373,7 @@
                     </span>
                   </div>
                 </div>
-                <div class="product">
+                <div class="product" style="display: block;">
                   <div class="img-product">
                     <a href="#TouchwoodChair"><img class="img-disc-product" src="./assets/images/deco2.jpeg" alt="Mej Mej Warrick The Whale Peel & Stick Wall Decals"></a>
                   
@@ -391,7 +399,7 @@
                     </span>
                   </div>
                 </div>
-                <div class="product">
+                <div class="product" style="display: block;">
                   <div class="img-product">
                     <a href="#TouchwoodChair"><img class="img-disc-product" src="./assets/images/deco3.jpeg" alt="Giraffe Storage Basket"></a>
                     <!-- discout price -->
@@ -416,21 +424,73 @@
                     </span>
                   </div>
                 </div>
+
+                <div class="product">
+                  <div class="img-product">
+                    <a href="#TouchwoodChair"><img class="img-disc-product" src="./assets/images/deco4.jpeg" alt="Diego Olivero Floor Sculptures"></a>
+                    <!-- discout price -->
+                    <div class="discout-pro pro3">
+                      <span>-10%</span>
+                    </div>
+                  </div>
+                  <div class="info-product">
+                    <h5 class="title-product"><a href="#product1">Diego Olivero Floor Sculptures</a></h5>
+                    <ul class="rating">
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-regular fa-star"></i></li>
+                    </ul>
+                    <span class="discout-price">
+                      $ 299
+                    </span>
+                    <span class="regular-price">
+                      $ 399
+                    </span>
+                  </div>
+                </div>
+
+                <div class="product">
+                  <div class="img-product">
+                    <a href="#TouchwoodChair"><img class="img-disc-product" src="./assets/images/deco5.jpeg" alt="White Marble Disc on Stand"></a>
+                    <!-- discout price -->
+                    <div class="discout-pro pro3">
+                      <span>-40%</span>
+                    </div>
+                  </div>
+                  <div class="info-product">
+                    <h5 class="title-product"><a href="#product1">White Marble Disc on Stand</a></h5>
+                    <ul class="rating">
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-regular fa-star"></i></li>
+                    </ul>
+                    <span class="discout-price">
+                      $ 62.90
+                    </span>
+                    <span class="regular-price">
+                      $ 163.20
+                    </span>
+                  </div>
+                </div>
               </div>
 
               <!-- Phần chuyển slide -->
-              <span class="next control-slide-product"><i class="fa-solid fa-angle-right"></i></span>                  
+              <button class="next control-slide-product" onclick="onChangeSlide('next', 'slide-gr2', 'group2')"><i class="fa-solid fa-angle-right"></i></button>                  
             </div>
 
             <!-- Group 3 -->
             <div class="group-products" id="group3">
 
               <!-- Phần chuyển slide -->
-              <span class="previous control-slide-product" onclick="plusSlides(-1)"><i class="fa-solid fa-chevron-left"></i></span>
+              <button class="previous control-slide-product" onclick="onChangeSlide('previous', 'slide-gr3', 'group3')"><i class="fa-solid fa-chevron-left"></i></button>
               
               <!-- Phần chứa tất cả sản phẩm -->
-              <div class="all-products">
-                <div class="product">
+              <div class="all-products" id="slide-gr3">
+                <div class="product" style="display: block;">
                   <div class="img-product">
                     <a href="#product1"><img class="img-disc-product" src="./assets/images/light1.jpeg" alt="Flora Table Lamp"></a>
                     
@@ -456,7 +516,7 @@
                     </span>
                   </div>
                 </div>
-                <div class="product">
+                <div class="product" style="display: block;">
                   <div class="img-product">
                     <a href="#TouchwoodChair"><img class="img-disc-product" src="./assets/images/light2.jpeg" alt="Acrylic Collectors Table Lamp"></a>
                   
@@ -482,7 +542,7 @@
                     </span>
                   </div>
                 </div>
-                <div class="product">
+                <div class="product" style="display: block;">
                   <div class="img-product">
                     <a href="#TouchwoodChair"><img class="img-disc-product" src="./assets/images/light3.jpeg" alt="Sarah Sherman Samuel Metal Sphere Table Lamp & Pleated Shade"></a>
                     <!-- discout price -->
@@ -507,20 +567,74 @@
                     </span>
                   </div>
                 </div>
+
+                <div class="product">
+                  <div class="img-product">
+                    <a href="#TouchwoodChair"><img class="img-disc-product" src="./assets/images/light4.jpeg" alt="Sculptural 3-Light Geo Sconce"></a>
+                    <!-- discout price -->
+                    <div class="discout-pro pro3">
+                      <span>-10%</span>
+                    </div>
+                  </div>
+                  <div class="info-product">
+                    <h5 class="title-product"><a href="#product1">Sculptural 3-Light Geo Sconce</a></h5>
+                    <ul class="rating">
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-regular fa-star"></i></li>
+                    </ul>
+                    <span class="discout-price">
+                      $ 194.65
+                    </span>
+                    <span class="regular-price">
+                      $ 214.65
+                    </span>
+                  </div>
+                </div>
+
+                <div class="product">
+                  <div class="img-product">
+                    <a href="#TouchwoodChair"><img class="img-disc-product" src="./assets/images/light5.jpeg" alt="Sculptural Glass 7-Light Globe Chandelier (43"–45")"></a>
+                    <!-- discout price -->
+                    <div class="discout-pro pro3">
+                      <span>-20%</span>
+                    </div>
+                  </div>
+                  <div class="info-product">
+                    <h5 class="title-product"><a href="#product1">Sculptural Glass 7-Light Globe Chandelier (43"–45")</a></h5>
+                    <ul class="rating">
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-regular fa-star"></i></li>
+                    </ul>
+                    <span class="discout-price">
+                      $ 459
+                    </span>
+                    <span class="regular-price">
+                      $ 629
+                    </span>
+                  </div>
+                </div>
+
+
               </div> 
               <!-- Phần chuyển slide -->
-              <span class="next control-slide-product"><i class="fa-solid fa-angle-right"></i></span>   
+              <button class="next control-slide-product" onclick="onChangeSlide('next', 'slide-gr3', 'group3')"><i class="fa-solid fa-angle-right"></i></button>   
             </div>
             
             <!-- Group 4 -->
             <div class="group-products" id="group4">
 
               <!-- Phần chuyển slide -->
-              <span class="previous control-slide-product" onclick="plusSlides(-1)"><i class="fa-solid fa-chevron-left"></i></span>
+              <button class="previous control-slide-product" onclick="onChangeSlide('previous', 'slide-gr4', 'group4')"><i class="fa-solid fa-chevron-left"></i></button>
               
               <!-- Phần chứa tất cả sản phẩm -->
-              <div class="all-products">              
-                <div class="product">
+              <div class="all-products" id="slide-gr4">              
+                <div class="product" style="display: block;">
                   <div class="img-product">
                     <a href="#product1"><img class="img-disc-product" src="./assets/images/outdoor1.jpeg" alt="Get The Look: Front Porch Decorating"></a>
                     
@@ -546,7 +660,7 @@
                     </span>
                   </div>
                 </div>
-                <div class="product">
+                <div class="product" style="display: block;">
                   <div class="img-product">
                     <a href="#TouchwoodChair"><img class="img-disc-product" src="./assets/images/outdoor2.jpeg" alt="Portside Outdoor Dining Table (76.5"), Benches (66") & Solid Wood Chairs Set"></a>
                   
@@ -572,7 +686,7 @@
                     </span>
                   </div>
                 </div>
-                <div class="product">
+                <div class="product" style="display: block;">
                   <div class="img-product">
                     <a href="#TouchwoodChair"><img class="img-disc-product" src="./assets/images/outdoor3.jpeg" alt="Fluted Side Table (13"–16")"></a>
                     <!-- discout price -->
@@ -597,20 +711,73 @@
                     </span>
                   </div>
                 </div>
+
+                <div class="product">
+                  <div class="img-product">
+                    <a href="#TouchwoodChair"><img class="img-disc-product" src="./assets/images/outdoor4.jpeg" alt="Curved Ficonstone Indoor/Outdoor Planters"></a>
+                    <!-- discout price -->
+                    <div class="discout-pro pro3">
+                      <span>-10%</span>
+                    </div>
+                  </div>
+                  <div class="info-product">
+                    <h5 class="title-product"><a href="#product1">Curved Ficonstone Indoor/Outdoor Planters</a></h5>
+                    <ul class="rating">
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <span class="discout-price">
+                      $ 99.65
+                    </span>
+                    <span class="regular-price">
+                      $ 109.65
+                    </span>
+                  </div>
+                </div>
+
+                <div class="product">
+                  <div class="img-product">
+                    <a href="#TouchwoodChair"><img class="img-disc-product" src="./assets/images/outdoor5.jpeg" alt="Bishop Ficonstone Indoor/Outdoor Planters"></a>
+                    <!-- discout price -->
+                    <div class="discout-pro pro3">
+                      <span>-20%</span>
+                    </div>
+                  </div>
+                  <div class="info-product">
+                    <h5 class="title-product"><a href="#product1">Bishop Ficonstone Indoor/Outdoor Planters</a></h5>
+                    <ul class="rating">
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-regular fa-star"></i></li>
+                      <li><i class="fa-regular fa-star"></i></li>
+                    </ul>
+                    <span class="discout-price">
+                      $ 139.99
+                    </span>
+                    <span class="regular-price">
+                      $ 159.99
+                    </span>
+                  </div>
+                </div>
+
               </div>
               <!-- Phần chuyển slide -->
-              <span class="next control-slide-product"><i class="fa-solid fa-angle-right"></i></span>
+              <button class="next control-slide-product" onclick="onChangeSlide('next', 'slide-gr4', 'group4')"><i class="fa-solid fa-angle-right"></i></button>
             </div>
 
             <!-- Group 5 -->
             <div class="group-products" id="group5">
 
               <!-- Phần chuyển slide -->
-              <span class="previous control-slide-product" onclick="plusSlides(-1)"><i class="fa-solid fa-chevron-left"></i></span>
+              <button class="previous control-slide-product" onclick="onChangeSlide('previous', 'slide-gr5', 'group5')"><i class="fa-solid fa-chevron-left"></i></button>
               
               <!-- Phần chứa tất cả sản phẩm -->
-              <div class="all-products">              
-                <div class="product">
+              <div class="all-products" id="slide-gr5">              
+                <div class="product" style="display: block;">
                   <div class="img-product">
                     <a href="#product1"><img class="img-disc-product" src="./assets/images/sto1.jpeg" alt="Anton Media Console (68"–80")"></a>
                     
@@ -636,7 +803,7 @@
                     </span>
                   </div>
                 </div>
-                <div class="product">
+                <div class="product" style="display: block;">
                   <div class="img-product">
                     <a href="#TouchwoodChair"><img class="img-disc-product" src="./assets/images/sto2.jpeg" alt="Pictograph Media Console (84")"></a>
                   
@@ -662,7 +829,7 @@
                     </span>
                   </div>
                 </div>
-                <div class="product">
+                <div class="product" style="display: block;">
                   <div class="img-product">
                     <a href="#TouchwoodChair"><img class="img-disc-product" src="./assets/images/sto3.jpeg" alt="Andes Side Storage Bed"></a>
                     <!-- discout price -->
@@ -687,9 +854,62 @@
                     </span>
                   </div>
                 </div>
+
+                <div class="product">
+                  <div class="img-product">
+                    <a href="#TouchwoodChair"><img class="img-disc-product" src="./assets/images/sto4.jpeg" alt="Studio Duc Juno Stacking Storage"></a>
+                    <!-- discout price -->
+                    <div class="discout-pro pro3">
+                      <span>-30%</span>
+                    </div>
+                  </div>
+                  <div class="info-product">
+                    <h5 class="title-product"><a href="#product1">Studio Duc Juno Stacking Storage</a></h5>
+                    <ul class="rating">
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <span class="discout-price">
+                      $ 365
+                    </span>
+                    <span class="regular-price">
+                      $ 395
+                    </span>
+                  </div>
+                </div>
+
+                <div class="product">
+                  <div class="img-product">
+                    <a href="#TouchwoodChair"><img class="img-disc-product" src="./assets/images/sto5.jpeg" alt="Brockton Bamboo Freestanding Storage"></a>
+                    <!-- discout price -->
+                    <div class="discout-pro pro3">
+                      <span>-10%</span>
+                    </div>
+                  </div>
+                  <div class="info-product">
+                    <h5 class="title-product"><a href="#product1">Brockton Bamboo Freestanding Storage</a></h5>
+                    <ul class="rating">
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <span class="discout-price">
+                      $ 90
+                    </span>
+                    <span class="regular-price">
+                      $ 100
+                    </span>
+                  </div>
+                </div>
+
               </div>
               <!-- Phần chuyển slide -->
-              <span class="next control-slide-product"><i class="fa-solid fa-angle-right"></i></span>
+              <button class="next control-slide-product" onclick="onChangeSlide('next', 'slide-gr5', 'group5')"><i class="fa-solid fa-angle-right"></i></button>
             </div>
 
           </div>
@@ -1097,19 +1317,19 @@
           </div>
         </div>
         <div class="contact-form">
-          <form action="" method="POST" onsubmit = "return validateForm()">
+          <form action="" method="POST" id="contactForm">
             <div class="name-email">
               <div class="name">
                 <input type="text" name="your-name" id="name" required placeholder="Enter Your Name">
               </div>
               <div class="email">
-                <input type="email" name="your-email" id="email" required placeholder="Enter Your Email">
+                <input type="email" name="your-email" id="yourEmail" required placeholder="Enter Your Email">
               </div>
             </div>
             <div class="message">
               <textarea name="cl-message" class="message" id="message" required cols="30" rows="10" placeholder="    Enter Your Message"></textarea>
             </div>
-            <button type="submit" class="button" id="btn">CONTACT NOW</button>
+            <button type="submit" class="button" id="btn" name="submit">CONTACT NOW</button>
           </div>
           </form>
       </div>
@@ -1236,6 +1456,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/main2.js"></script>
     
   </body>
 </html>

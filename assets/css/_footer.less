@@ -4,7 +4,7 @@
 .footer-area {
   position: relative;
   .container-ft {
-    width: 1170px;
+    max-width: 1170px;
     margin-right: auto;
     margin-left: auto;
     .footer-inner {
@@ -144,6 +144,7 @@
 @media (min-width: 1199.98px) and (max-width: 1920px) {
   .footer-area {
     .container-ft {
+      width: 90%;
       .footer-inner {
         .row {
           margin-left: 0;
@@ -169,6 +170,21 @@
   .footer-area {
     .container-ft {
       width: 90%;
+      .footer-inner {
+        width: 90%;
+        .row {
+          display: flex;
+          flex-wrap: wrap;
+          margin-right: -117px;
+          margin-left: 15px;
+          .footer-logo {
+            width: 27%;
+            margin-top: 40px;
+            margin-left: 40px;
+            margin-right: 0;
+          }
+        }
+      }
     }
     .footer-copyright {
       width: 90%;
@@ -204,11 +220,11 @@
 
 @media (min-width: 454px) and (max-width: 575.98px) {
   .footer-area {
-    width: 100%;
+    width: 90%;
     .container-ft {
-      width: 100%;
+      width: 90%;
       .footer-inner {
-        width: 100%;
+        width: 90%;
         .row {
           display: flex;
           flex-wrap: wrap;
